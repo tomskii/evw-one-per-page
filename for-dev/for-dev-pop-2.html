@@ -1,0 +1,276 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>GOV.UK</title>
+	<meta name="author" content="Tom Harrop" />
+	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+	<!--[if gt IE 8]><!--><link href="govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<!--[if IE 6]><link href="govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="govuk-assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="govuk-assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<link href="govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+	<link href="govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/form.storage.js"></script>
+	<script type="text/javascript" src="scripts/application.js"></script>
+	<script type="text/javascript" src="scripts/details.polyfill.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+
+	<style>
+		.hide-by-default, .ifTrain, .ifBoat, .form-date .form-group label[dir="rtl"], *[dir="rtl"], *[data-lang="arabic"] {
+			display:none;
+		}
+		.ifPlane {display:block;}
+		.show-if-mode-Air {
+			display: block;
+		}
+
+	</style>
+</head>
+<body>
+
+	<header data-includefile="header"></header>
+	<main id="content" role="main">
+		<div data-includefile="banner-alpha"></div>
+
+<!-- DELETE FROM HERE -->
+
+
+
+
+	<div class="form-group" data-group-name="flightNumber" id="byPlaneDiv" style="-webkit-user-select: auto;">
+
+        <h1 class="heading-large" data-lang="eng" style="-webkit-user-select: auto;">Your flight from Dubai International to London Heathrow</h1>
+        <h1 class="heading-large rtl-both" data-lang="arabic" dir="rtl" style="-webkit-user-select: auto;">معلومات رحلتك</h1>
+
+    </div>
+
+
+
+<div style="padding: 0 1em; border: 1px solid #ccc; display:block; background: #eee; clear:both;">
+				<p class="heading-medium" style="-webkit-user-select: auto;">Your arrival in to London Heathrow</p>
+<p>Please check these details and correct them if required</p>
+				<p class="heading-medium" dir="rtl" style="-webkit-user-select: auto;">وصولك في المملكة المتحدة</p>
+
+				<div class="form-group" data-group-name="portOfArrival" id="portOfArrivalDiv" style="-webkit-user-select: auto;">
+
+		        <fieldset style="-webkit-user-select: auto;">
+		            <label for="portOfArrival" class="ifPlane" data-lang="eng" style="-webkit-user-select: auto;">What is your arrival airport in the UK?</label>
+							<br>	<input type="text" class="form-control" maxlength="25" value="London Heathrow - Terminal 2">
+		        </fieldset>
+		    </div>
+
+				<div class="form-group" data-group-name="arrivalDate" style="-webkit-user-select: auto;">
+		        <fieldset style="-webkit-user-select: auto;">
+
+
+		            <div class="ifPlane ifTrain ifBoat ifLand" style="-webkit-user-select: auto;">
+		                <label for="arrivalDate" class="date-field">What date does your flight land at London Heathrow?</label>
+		            </div>
+
+		            <div class="form-date" id="arrivalDate" style="-webkit-user-select: auto;">
+
+		                <div class="ifPlane" style="-webkit-user-select: auto;">
+		                    <legend class="form-hint" data-lang="eng" style="-webkit-user-select: auto;">For example, 18 9 2015. The date will be written on your flight confirmation</legend>
+		                    <legend class="form-hint rtl-both rtl-label" data-lang="arabic" dir="rtl" style="-webkit-user-select: auto;">على سبيل المثال،2015 09 18. تأكد من إدخال التاريخ الصحيح إذا كان وقت السفر بالليل. سيكون هذا التاريخ مكتوبا على برنامج السفر</legend>
+		                </div>
+
+		                <div class="form-group form-group-day" style="-webkit-user-select: auto;">
+		                    <label for="arrivalDateDay" data-lang="eng" style="-webkit-user-select: auto;"><span class="visuallyhidden" style="-webkit-user-select: auto;">Arrival date </span>Day <span class="visuallyhidden" style="-webkit-user-select: auto;">expected format DD. Required</span></label>
+		                    <label for="arrivalDateDay" data-lang="arabic" dir="rtl" class="rtl-both" style="-webkit-user-select: auto;">اليوم</label>
+		                    <input type="text" class="form-control" id="arrivalDateDay" name="arrivalDateDay" aria-required="true" value="04" maxlength="2" tabindex="10" style="-webkit-user-select: auto;">
+		                </div>
+		                <div class="form-group form-group-month" style="-webkit-user-select: auto;">
+		                    <label for="arrivalDateMonth" data-lang="eng" style="-webkit-user-select: auto;"><span class="visuallyhidden" style="-webkit-user-select: auto;">Arrival date </span>Month <span class="visuallyhidden" style="-webkit-user-select: auto;">expected format MM. Required</span></label>
+		                    <label for="arrivalDateMonth" data-lang="arabic" dir="rtl" class="rtl-both" style="-webkit-user-select: auto;">الشهر</label>
+		                    <input type="text" class="form-control" id="arrivalDateMonth" name="arrivalDateMonth" aria-required="true" value="06" maxlength="2" tabindex="11" style="-webkit-user-select: auto;">
+		                </div>
+		                <div class="form-group form-group-year" style="-webkit-user-select: auto;">
+		                    <label for="arrivalDateYear" data-lang="eng" style="-webkit-user-select: auto;"><span class="visuallyhidden" style="-webkit-user-select: auto;">Arrival date </span>Year <span class="visuallyhidden" style="-webkit-user-select: auto;">expected format YYYY. Required</span></label>
+		                    <label for="arrivalDateYear" data-lang="arabic" dir="rtl" class="rtl-both" style="-webkit-user-select: auto;">السنة</label>
+		                    <input type="text" class="form-control" id="arrivalDateYear" name="arrivalDateYear" aria-required="true" value="2016" maxlength="4" tabindex="12" style="-webkit-user-select: auto;">
+		                </div>
+		            </div>
+		        </fieldset>
+		    </div>
+
+				<div class="form-group" data-group-name="arrivalTime" style="-webkit-user-select: auto;">
+		        <fieldset id="arrivalTime" style="-webkit-user-select: auto;">
+
+
+		            <div class="no-js-hidden ifPlane" style="-webkit-user-select: auto;">
+		                <label for="arrivalTime" class="date-field" data-lang="eng" style="-webkit-user-select: auto;">What time is your flight due to land at London Heathrow?</label>
+		                <label for="arrivalTime" class="date-field rtl-both" data-lang="arabic" dir="rtl" style="-webkit-user-select: auto;">ما وقت هبوط رحلتك المتوقع في المملكة المتحدة؟</label>
+		            </div>
+
+		            <div class="no-js-hidden ifTrain js-hidden" style="-webkit-user-select: auto;">
+		                <label for="arrivalTime" class="date-field" data-lang="eng" style="-webkit-user-select: auto;">What time is your train due to arrive in the UK?</label>
+		                <label for="arrivalTime" class="date-field rtl-both" data-lang="arabic" dir="rtl" style="-webkit-user-select: auto;">ما وقت وصول القطار المتوقع؟</label>
+		            </div>
+
+		            <div class="no-js-hidden ifBoat js-hidden" style="-webkit-user-select: auto;">
+		                <label for="arrivalTime" class="date-field" data-lang="eng" style="-webkit-user-select: auto;">What time is your boat due to arrive?</label>
+		                <label for="arrivalTime" class="date-field rtl-both" data-lang="arabic" dir="rtl" style="-webkit-user-select: auto;">ما وقت وصول السفينة المتوقع؟</label>
+		            </div>
+
+
+		            <div class="form-date" style="-webkit-user-select: auto;">
+		                <div class="no-js-hidden ifPlane ifTrain ifBoat ifLand" style="-webkit-user-select: auto;">
+		                    <legend class="form-hint" data-lang="eng" style="-webkit-user-select: auto;">For example, 21:45</legend>
+		                    <legend class="form-hint rtl-both rtl-label" data-lang="arabic" dir="rtl" style="-webkit-user-select: auto;">على سبيل المثال، 21:45</legend>
+		                </div>
+
+		                <div class="form-group form-group-day" style="-webkit-user-select: auto;">
+		                    <label for="arrivalTimeHour" data-lang="eng" style="-webkit-user-select: auto;">Hours</label>
+		                    <label for="arrivalTimeHour" data-lang="arabic" dir="rtl" class="rtl-both" style="-webkit-user-select: auto;">الساعة</label>
+		                    <input type="text" class="form-control" id="arrivalTimeHour" name="arrivalTimeHour" aria-required="true" maxlength="2" tabindex="13" style="-webkit-user-select: auto;" value="21">
+		                </div>
+		                <div class="form-group form-group-month" style="-webkit-user-select: auto;">
+		                    <label for="arrivalTimeMinutes" data-lang="eng" style="-webkit-user-select: auto;"><span class="visuallyhidden" style="-webkit-user-select: auto;">Arrival time </span>Minutes <span class="visuallyhidden" style="-webkit-user-select: auto;">expected format MM. Required</span></label>
+		                    <label for="arrivalTimeMinutes" data-lang="arabic" dir="rtl" class="rtl-both" style="-webkit-user-select: auto;">الدقائق</label>
+		                    <input type="text" class="form-control" id="arrivalTimeMinutes" name="arrivalTimeMinutes" aria-required="true" maxlength="2" tabindex="14" style="-webkit-user-select: auto;" value="45">
+		                </div>
+		            </div>
+
+		        </fieldset>
+					</div>
+					<div style="clear:both;"></div>
+</div>
+
+
+
+
+
+		<div class="form-group show-if-mode-Air" id="departureForUKDateDiv" style="-webkit-user-select: auto;">
+        <p class="heading-medium" style="-webkit-user-select: auto;">Taking off from Dubai Internaional </p>
+        <p class="heading-medium" dir="rtl" style="-webkit-user-select: auto;">سفرك للمملكة المتحدة</p>
+        <fieldset id="departureForUKDate" data-group-name="departureForUKDate" style="-webkit-user-select: auto;">
+
+            <label for="departureForUKDate" class="date-field" data-lang="eng" style="-webkit-user-select: auto;">What date does your flight take off from Dubai Internaional?</label>
+            <label class="date-field rtl-both" data-lang="arabic" dir="rtl" style="-webkit-user-select: auto;">ما تاريخ سفرك للمملكة المتحدة</label>
+            <div class="form-date" id="departureForUKDateGroup" style="-webkit-user-select: auto;">
+
+                <div class="ifPlane" style="-webkit-user-select: auto;">
+                    <p class="form-hint" data-lang="eng" style="-webkit-user-select: auto;">For example, 18 9 2015. The date will be written on your flight confirmation</p>
+                    <p class="form-hint rtl-both" data-lang="arabic" dir="rtl" style="-webkit-user-select: auto;">على سبيل المثال،2015 09 18. تأكد من إدخال التاريخ الصحيح إذا كان وقت السفر بالليل. سيكون هذا التاريخ مكتوبا على برنامج السفر</p>
+                </div>
+                <div class="ifTrain js-hidden" style="-webkit-user-select: auto;">
+                    <p class="form-hint" data-lang="eng" style="-webkit-user-select: auto;">For example, 18 9 2015</p>
+                    <p class="form-hint rtl-both" data-lang="arabic" dir="rtl" style="-webkit-user-select: auto;">على سبيل المثال، 2015 09 18</p>
+                </div>
+                <div class="ifBoat js-hidden" style="-webkit-user-select: auto;">
+                    <p class="form-hint" data-lang="eng" style="-webkit-user-select: auto;">For example, 18 9 2015</p>
+                    <p class="form-hint rtl-both" data-lang="arabic" dir="rtl" style="-webkit-user-select: auto;">على سبيل المثال، 2015 09 18</p>
+                </div>
+
+                <div class="form-group form-group-day" style="-webkit-user-select: auto;">
+                    <label for="departureForUKDateDay" data-lang="eng" style="-webkit-user-select: auto;"><span class="visuallyhidden" style="-webkit-user-select: auto;">Arrival date </span>Day <span class="visuallyhidden" style="-webkit-user-select: auto;">expected format DD. Required</span></label>
+                    <label data-lang="arabic" dir="rtl" class="rtl-both" style="-webkit-user-select: auto;">اليوم</label>
+                    <input type="text" class="form-control" id="departureForUKDateDay" name="departureForUKDateDay" aria-required="true" value="" maxlength="2" tabindex="2" style="-webkit-user-select: auto;">
+                </div>
+                <div class="form-group form-group-month" style="-webkit-user-select: auto;">
+                    <label for="departureForUKDateMonth" data-lang="eng" style="-webkit-user-select: auto;"><span class="visuallyhidden" style="-webkit-user-select: auto;">Arrival date </span>Month <span class="visuallyhidden" style="-webkit-user-select: auto;">expected format MM. Required</span></label>
+                    <label data-lang="arabic" dir="rtl" class="rtl-both" style="-webkit-user-select: auto;">الشهر</label>
+                    <input type="text" class="form-control" id="departureForUKDateMonth" name="departureForUKDateMonth" aria-required="true" value="" maxlength="2" tabindex="3" style="-webkit-user-select: auto;">
+                </div>
+                <div class="form-group form-group-year" style="-webkit-user-select: auto;">
+                    <label for="departureForUKDateYear" data-lang="eng" style="-webkit-user-select: auto;"><span class="visuallyhidden" style="-webkit-user-select: auto;">Arrival date </span>Year <span class="visuallyhidden" style="-webkit-user-select: auto;">expected format YYYY. Required</span></label>
+                    <label data-lang="arabic" dir="rtl" class="rtl-both" style="-webkit-user-select: auto;">السنة</label>
+                    <input type="text" class="form-control" id="departureForUKDateYear" name="departureForUKDateYear" aria-required="true" value="" maxlength="4" tabindex="4" style="-webkit-user-select: auto;">
+                </div>
+            </div>
+        </fieldset>
+
+        <div style="clear: both; -webkit-user-select: auto;">
+            <p style="-webkit-user-select: auto;">&nbsp;</p>
+        </div>
+
+        <fieldset id="departureForUKTime" data-group-name="departureForUKTime" style="-webkit-user-select: auto;">
+
+
+            <div class="no-js-hidden ifPlane" style="-webkit-user-select: auto;">
+                <label class="date-field" data-lang="eng" style="-webkit-user-select: auto;">What time does your flight take off from Dubai Internaional?</label>
+                <label class="date-field rtl-both" data-lang="arabic" dir="rtl" style="-webkit-user-select: auto;">ما وقت سفرك للمملكة المتحدة؟</label>
+            </div>
+
+
+            <div class="form-date" id="departureForUKTimeDiv" style="-webkit-user-select: auto;">
+                <p class="form-hint" data-lang="eng" style="-webkit-user-select: auto;">For example, 21:45</p>
+                <p class="form-hint rtl-both" data-lang="arabic" dir="rtl" style="-webkit-user-select: auto;">على سبيل المثال، 21:45</p>
+
+                <div class="form-group form-group-day" style="-webkit-user-select: auto;">
+                    <label for="departureForUKTimeHour" data-lang="eng" style="-webkit-user-select: auto;"><span class="visuallyhidden" style="-webkit-user-select: auto;">Departure for UK time </span>Hours <span class="visuallyhidden" style="-webkit-user-select: auto;">expected format HH. Required</span></label>
+                    <label data-lang="arabic" dir="rtl" class="rtl-both" style="-webkit-user-select: auto;">الساعة</label>
+                    <input type="text" class="form-control" id="departureForUKTimeHour" name="departureForUKTimeHour" aria-required="true" value="" maxlength="2" tabindex="5" style="-webkit-user-select: auto;">
+                </div>
+                <div class="form-group form-group-month" style="-webkit-user-select: auto;">
+                    <label for="departureForUKTimeMinutes" data-lang="eng" style="-webkit-user-select: auto;"><span class="visuallyhidden" style="-webkit-user-select: auto;">Departure for UK time</span>Minutes <span class="visuallyhidden" style="-webkit-user-select: auto;">expected format MM. Required</span></label>
+                    <label data-lang="arabic" dir="rtl" class="rtl-both" style="-webkit-user-select: auto;">الدقائق</label>
+                    <input type="text" class="form-control" id="departureForUKTimeMinutes" name="departureForUKTimeMinutes" aria-required="true" value="" maxlength="2" tabindex="6" style="-webkit-user-select: auto;">
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+		<!--<div class="form-group ifPlane ifTrain ifBoat" data-group-name="inwardDepartureCountry" id="inwardDepartureCountryDiv" style="-webkit-user-select: auto;">
+
+
+        <div class="no-js-hidden ifPlane" style="-webkit-user-select: auto;">
+            <label for="inwardDepartureCountry" data-lang="eng" style="-webkit-user-select: auto;">What country are you flying to the UK from?</label>
+            <label data-lang="arabic" dir="rtl" class="rtl-both" style="-webkit-user-select: auto;">من أي دولة ستطير للمملكة المتحدة؟</label>
+        </div>
+        <div class="no-js-hidden ifTrain js-hidden" style="-webkit-user-select: auto;">
+            <label for="inwardDepartureCountry" data-lang="eng" style="-webkit-user-select: auto;">What country is your train to the UK travelling from?</label>
+            <label data-lang="arabic" dir="rtl" class="rtl-both" style="-webkit-user-select: auto;">دولة المغادرة</label>
+        </div>
+        <div class="no-js-hidden ifBoat js-hidden" style="-webkit-user-select: auto;">
+            <label for="inwardDepartureCountry" data-lang="eng" style="-webkit-user-select: auto;">What country is your boat to the UK sailing from?</label>
+            <label data-lang="arabic" dir="rtl" class="rtl-both" style="-webkit-user-select: auto;">دولة المغادرة</label>
+        </div>
+        <span class="twitter-typeahead" style="position: relative; display: inline-block; -webkit-user-select: auto;"><input type="text" class="form-control tt-hint" value="" maxlength="100" style="-webkit-user-select: auto; position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);" readonly="" autocomplete="off" spellcheck="false" dir="ltr"><input type="text" class="form-control tt-input" id="inwardDepartureCountry" name="inwardDepartureCountry" value="" maxlength="100" style="-webkit-user-select: auto; position: relative; vertical-align: top; background-color: transparent;" autocomplete="off" spellcheck="false" dir="auto" tabindex="7"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: nta, Arial, sans-serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none; -webkit-user-select: auto;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; -webkit-user-select: auto;"><div class="tt-dataset tt-dataset-nationalities" style="-webkit-user-select: auto;"></div></div></span>
+        <input type="hidden" id="inwardDepartureCountryCode" name="inwardDepartureCountryCode" value="" maxlength="3" style="-webkit-user-select: auto;">
+    </div>-->
+
+		<div class="form-group ifPlane ifTrain ifBoat" data-group-name="inwardDeparturePort" id="inwardDeparturePortDiv" style="-webkit-user-select: auto;">
+
+        <div class="no-js-hidden ifPlane" style="-webkit-user-select: auto;">
+            <label for="inwardDeparturePort" data-lang="eng" style="-webkit-user-select: auto;">Our system shows you are flying to the UK from Dubai International. If this is not correct, enter the correct airport.</label>
+            <legend class="form-hint" data-lang="eng" style="-webkit-user-select: auto;">This will be written on your flight confirmation</legend>
+            <label data-lang="arabic" dir="rtl" class="rtl-both" style="-webkit-user-select: auto;">من أي مطار ستطير للمملكة المتحدة</label>
+            <legend class="form-hint rtl-both rtl-label" data-lang="arabic" dir="rtl" style="-webkit-user-select: auto;">سيكون هذا مكتوبا في جدول السفر</legend>
+        </div>
+        <div class="no-js-hidden ifTrain js-hidden" style="-webkit-user-select: auto;">
+            <label for="inwardDeparturePort" data-lang="eng" style="-webkit-user-select: auto;">What station is your train to the UK from?</label>
+            <label data-lang="arabic" dir="rtl" class="rtl-both" style="-webkit-user-select: auto;">ما اسم المحطة التي سيصل بها القطار في المملكة المتحدة؟</label>
+        </div>
+        <div class="no-js-hidden ifBoat js-hidden" style="-webkit-user-select: auto;">
+            <label for="inwardDeparturePort" data-lang="eng" style="-webkit-user-select: auto;">What port is your boat to the UK sailing from?</label>
+            <label data-lang="arabic" dir="rtl" class="rtl-both" style="-webkit-user-select: auto;">من أي ميناء ستبحر السفينة للمملكة المتحدة؟</label>
+        </div>
+        <span class="twitter-typeahead" style="position: relative; display: inline-block; -webkit-user-select: auto;"><input type="text" class="form-control tt-hint" value="" maxlength="95" style="-webkit-user-select: auto; position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);" readonly="" autocomplete="off" spellcheck="false" dir="ltr"><input type="text" class="form-control tt-input" id="inwardDeparturePort" name="inwardDeparturePort" value="" maxlength="95" style="-webkit-user-select: auto; position: relative; vertical-align: top; background-color: transparent;" autocomplete="off" spellcheck="false" dir="auto" tabindex="8"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: nta, Arial, sans-serif; font-size: 19px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none; -webkit-user-select: auto;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; -webkit-user-select: auto;"><div class="tt-dataset tt-dataset-airports" style="-webkit-user-select: auto;"></div></div></span>
+        <input type="hidden" id="inwardDeparturePortCode" name="inwardDeparturePortCode" value="" maxlength="3" style="-webkit-user-select: auto;">
+    </div>
+
+    </div>
+
+
+	<div class="form-group">
+<a href="#" class="button">Continue</a>
+
+	</div>
+
+<!-- STOP DELETING! -->
+
+
+	</main>
+	<footer data-includefile="footer"></footer>
+</body>
+</html>

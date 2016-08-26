@@ -1,0 +1,98 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>GOV.UK</title>
+	<meta name="author" content="Tom Harrop" />
+	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+	<!--[if gt IE 8]><!--><link href="govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<!--[if IE 6]><link href="govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="govuk-assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="govuk-assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<link href="govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+	<link href="govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/form.storage.js"></script>
+	<script type="text/javascript" src="scripts/application.js"></script>
+	<script type="text/javascript" src="scripts/details.polyfill.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+</head>
+<body>
+
+	<header data-includefile="header"></header>
+	<main id="content" role="main">
+		<div data-includefile="banner-alpha"></div>
+
+<!-- DELETE FROM HERE -->
+
+       <h1 class="form-title heading-large" data-lang="eng">Is this your flight to the UK?</h1>
+       <h1 class="form-title heading-large" data-lang="arabic" dir="rtl">هل هذه الرحلة إلى المملكة المتحدة؟</h1>
+
+<div class="form-group more-space less-bottom2">
+<div class="split-width clearfix">
+			 <div class="flight-details-container">
+           <div class="flight-details-row">
+               <div data-lang="eng">Flight number</div>
+               <div data-value="flight-number"><strong>EK003</strong></div>
+               <div data-lang="arabic" dir="rtl" class="rtl-both">رقم الرحلة</div>
+           </div>
+           <div class="flight-details-row">
+               <div data-lang="eng">Departure airport</div>
+               <div data-value="departure-airport"><strong>Dubai</strong></div>
+               <div data-lang="arabic" dir="rtl" class="rtl-both">مطار المغادرة</div>
+           </div>
+           <div class="flight-details-row">
+               <div data-lang="eng">Arrival airport</div>
+               <div data-value="arrival-airport"><strong>London - Heathrow</strong></div>
+               <div data-lang="arabic" dir="rtl" class="rtl-both">مطار الوصول</div>
+           </div>
+           <div class="flight-details-row">
+               <div data-lang="eng">Arrival date</div>
+               <div data-value="arrival-date"><strong>22/3/2016</strong></div>
+               <div data-lang="arabic" dir="rtl" class="rtl-both">تاريخ الوصول</div>
+           </div>
+           <div class="flight-details-row">
+               <div data-lang="eng">Arrival time</div>
+               <div data-value="arrival-time"><strong>18:15</strong></div>
+               <div data-lang="arabic" dir="rtl" class="rtl-both">وقت الوصول</div>
+           </div>
+       </div>
+		 </div>
+       <div class="form-group" data-group-name="flight-details-check">
+           <fieldset class="inline" id="flight-details-check">
+               <div class="radio-wrapper">
+                   <input id="flightDetailsCheckYes" name="flightDetailsCheck" data-button-page="departure-date-time.html" data-button-id="#continuebutton" value="Yes" type="radio">
+                       <label class="block-label" for="flightDetailsCheckYes">
+												 <span data-lang="eng">Yes</span>
+                       <span data-lang="arabic" dir="rtl" class="rtl-both">نعم</span>
+                   </label>
+               </div>
+               <div class="radio-wrapper rightinput">
+                       <input id="flightDetailsCheckNo" name="flightDetailsCheck" data-button-page="we-cant-find-your-flight.html" data-button-id="#continuebutton" value="No" type="radio">
+                       <label class="block-label" for="flightDetailsCheckNo">
+												 <span data-lang="eng">No</span>
+                       <span data-lang="arabic" dir="rtl" class="rtl-both">لا</span>
+                   </label>
+               </div>
+           </fieldset>
+       </div>
+   </div>
+	<div class="form-group">
+		<a class="button" href="departure-date-time.html" id="continuebutton"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
+	</div>
+
+
+<!-- STOP DELETING! -->
+
+
+	</main>
+	<footer data-includefile="footer"></footer>
+</body>
+</html>

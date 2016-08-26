@@ -1,0 +1,76 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>GOV.UK</title>
+	<meta name="author" content="Tom Harrop" />
+	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+	<!--[if gt IE 8]><!--><link href="govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<!--[if IE 6]><link href="govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="govuk-assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="govuk-assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<link href="govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+	<link href="govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/form.storage.js"></script>
+	<script type="text/javascript" src="scripts/application.js"></script>
+	<script type="text/javascript" src="scripts/details.polyfill.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+	<script>
+	$(document).ready(function(){
+		$(".hideotherTravellersDiv").click(function(){
+				$("#otherTravellersDiv").hide();
+		});
+		$(".showotherTravellersDiv").click(function(){
+				$("#otherTravellersDiv").show();
+		});
+	});
+	</script>
+</head>
+<body>
+
+	<header data-includefile="header"></header>
+	<main id="content" role="main">
+		<div data-includefile="banner-alpha"></div>
+
+<!-- DELETE FROM HERE -->
+<div class="form-group">
+	<h1 class="form-title heading-large" data-lang="eng">Applying for someone else</h1>
+	<h1 class="form-title heading-large" data-lang="arabic" dir="rtl" class="rtl-both">التقدم نيابة عن شخص آخر</h1>
+
+	<div id="completerDetailsDiv">
+			<div class="form-group " data-group-name="completersEmailAddress" style="width: 100%">
+					<div class="split-width clearfix">
+						<label class="form-label" for="completersEmailAddress" data-lang="eng">What is your email address?</label>
+					<label class="form-label" for="completersEmailAddress" data-lang="arabic" dir="rtl">ما عنوان بريدك الإلكتروني؟</label>
+				</div>
+					<input type="text" id="completersEmailAddress" name="completersEmailAddress" value="" class="form-control" maxlength="127">
+			</div>
+			<div data-group-name="completersContactDetails">
+				<div class="split-width clearfix">
+					<label class="form-label" for="completersContactDetails" data-lang="eng">Enter your name and address. Include your business name if appropriate.</label>
+					<label class="form-label" for="completersContactDetails" data-lang="arabic" dir="rtl">اذكر اسم شركتك وأدخل اسمك وعنوانك</label>
+				</div>
+					<textarea type="text" id="completersContactDetails" name="completersContactDetails" class="form-control" value="" maxlength="200"></textarea>
+			</div>
+	</div>
+
+</div>
+	<div class="form-group">
+		<a class="button" id="continuebutton" href="summary.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
+	</div>
+
+<!-- STOP DELETING! -->
+
+
+	</main>
+	<footer data-includefile="footer"></footer>
+</body>
+</html>
