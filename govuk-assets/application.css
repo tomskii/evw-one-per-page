@@ -1234,12 +1234,12 @@ p.icon-important  {
 }
 @media (min-width: 641px) {
 p.icon-important  {
-    width: 35%;
+    width: 42%;
     float: left
 }}
 @media (min-width: 641px) {
 p.icon-important[dir="rtl"]  {
-    width: 48%;
+    width: 42%;
     float: right
 }}
 @media only screen and (-webkit-min-device-pixel-ratio: 2), not all, not all, not all, only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
