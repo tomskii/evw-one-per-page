@@ -624,7 +624,7 @@ width: 100%;  }
     .form-hint {margin: 8px 0 8px 0; width: 48%; float: left}
   }
   @media (min-width: 641px) {
-      .form-hint[dir="rtl"] {float: right; margin: 0 0 8px 0; width: 48%}
+      .form-hint[dir="rtl"] {float: right; margin: 8px 0 8px 0; width: 48%}
     }
 .form-control {
   font-family: "nta", Arial, sans-serif;
@@ -2090,4 +2090,10 @@ p.form-hint[dir="rtl"] {font-size: 22px}
 @media (min-width: 641px){
 .radio-wrapper .block-label span {display: inline}
 .radio-wrapper .block-label span[dir="rtl"] {margin-left: 20px; font-size: 110%}
+}
+.more-margin-bottom {margin-bottom: 20px}
+
+@media (min-width: 641px){
+.split-text {width: 48%; float: left}
+.split-text[dir="rtl"] {float: right}
 }
