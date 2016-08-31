@@ -321,6 +321,12 @@ main {
   margin-top: 1.04167em;
   margin-bottom: 0.41667em; }
 
+  .heading-large[dir="rtl"] {font-size: 34px;}
+  @media (max-width: 640px) {
+    .heading-large[dir="rtl"] {
+      font-size: 28px;
+      line-height: 1.0416666667;
+      } }
   @media (max-width: 640px) {
     .heading-large {
       font-size: 24px;
@@ -618,7 +624,7 @@ width: 100%;  }
     .form-hint {margin: 8px 0 8px 0; width: 48%; float: left}
   }
   @media (min-width: 641px) {
-      .form-hint[dir="rtl"] {float: right; margin: 8px 0 8px 0; width: 48%}
+      .form-hint[dir="rtl"] {float: right; margin: 0 0 8px 0; width: 48%}
     }
 .form-control {
   font-family: "nta", Arial, sans-serif;
@@ -760,13 +766,13 @@ input[type=number] {
   width: device-width; }
 
   .block-label {
-    display: block;
+    display: inline-block;
     float: none;
     clear: left;
     position: relative;
     background: #dee0e2;
     border: 1px solid #dee0e2;
-    padding: 18px 30px 15px 45px;
+    padding: 18px 20px 15px 45px;
     margin-top: 10px;
     margin-bottom: 10px;
     cursor: pointer; }
@@ -840,7 +846,6 @@ table td.numeric {
   position: relative;
   display: -moz-inline-stack;
   display: inline-block;
-  padding: 0.3em 0.6em 0.2em 0.6em;
   border: none;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -856,7 +861,7 @@ table td.numeric {
   cursor: pointer;
   color: #fff;
   margin: 0 15px 15px 0;
-  padding: 0.52632em 0.78947em 0.26316em 0.78947em;
+  padding: 0.52632em 1em 0.5em 1em;
   vertical-align: top; }
 
 .button span.rtl-both {padding-left:0}
@@ -996,11 +1001,11 @@ ul, ol {
 .panel-indent legend {
   margin-top: 0; }
 
-.panel-indent p:only-child, .panel-indent p:last-child {
+/*.panel-indent p:only-child, .panel-indent p:last-child {
   margin-bottom: 0; }
 
 .panel-indent .form-group:last-child {
-  margin-bottom: 0; }
+  margin-bottom: 0; }*/
 
 .startpage .panel-indent {
   border-left: 10px solid #bfc1c3;
@@ -1202,8 +1207,9 @@ strong {
 label .rtl-both {
   text-indent: 0; }
     }
-.button span {display: block}
+.button span {display: inline}
 .button.download span {display: inline}
+.button span[dir="rtl"] {margin-left: 20px; font-size: 120%}
 
 @media (max-width: 641px) {
     .form-group {width: 100%}
@@ -1253,7 +1259,7 @@ p.icon-important[dir="rtl"]  {
     height: 35px;
 }
 p.icon-important[dir="rtl"] {
-    background-position: right;
+    background-position: right top;
     padding-left: 0;
     padding-right: 42px;
 }
@@ -2030,9 +2036,58 @@ ul, ol {
 .split-width label {width: 48%; float: left}
 .split-width label[dir="rtl"] {width: 48%; float: right}
 
+.split-width .check-your-name-list {width: 48%; float: left}
+.split-width .check-your-name-list[dir="rtl"] {width: 48%; float: right}
+
+@media (max-width: 640px){
+.split-width .check-your-name-list {width: 100%}
+}
+
+@media (min-width: 641px) {
+#change-name-above p {width: 48%; float: left}
+#change-name-above p[dir="rtl"] {width: 48%; float: right}
+}
 @media (max-width: 640px){
   .split-width label {width: 100%; float: left}
   .split-width label[dir="rtl"] {width: 100%; float: right}}
 
   @media (min-width: 641px){
     .half-link {width: 50%; float: left}}
+
+    .check-name-field {
+    width: 100%;
+    font-size: 29px;
+    font-weight: 700;
+    padding: 15px;
+    border-width: 1px;
+}
+p[dir="rtl"] {font-size: 22px}
+label[dir="rtl"] {font-size: 22px}
+p.form-hint[dir="rtl"] {font-size: 22px}
+.line-height-label, .line-height-label[dir="rtl"] {line-height: 2em; overflow: hidden}
+.bold-small, .bold-small[dir="rtl"] {line-height: 105%; overflow: hidden}
+.passport-upload-guidance-text[dir="rtl"], .passport-upload-requirements-right {font-size: 110%}
+
+@media (min-width: 641px){
+#passportImagePreview {width: 50%}}
+@media (max-width: 840px){
+#passportImagePreview {width: 66%}}
+@media (max-width: 640px){
+#passportImagePreview {width: 100%}}
+
+.flight-details-row div[dir="rtl"] {
+    font-size: 120%
+}
+#otherTravellersDiv.panel-indent label {width: 48%; float: left}
+@media (min-width: 641px){
+  #otherTravellersDiv.panel-indent label[dir="rtl"] {width: 48%; float: right}
+}
+@media (max-width: 640px){
+  #otherTravellersDiv.panel-indent label {width: 100%}
+  #otherTravellersDiv.panel-indent label[dir="rtl"] {width: 100%}
+}
+.arabic-half {font-size: 120%}
+@media (min-width: 641px){
+.radio-wrapper .block-label span {display: inline}
+.radio-wrapper .block-label span[dir="rtl"] {margin-left: 20px; font-size: 110%}
+}

@@ -7,7 +7,6 @@
 <head>
 	<meta charset="utf-8">
 	<title>GOV.UK</title>
-	<meta name="author" content="Tom Harrop" />
 	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
 	<!--[if gt IE 8]><!--><link href="govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
 	<!--[if IE 6]><link href="govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
@@ -30,36 +29,42 @@
 		<div data-includefile="banner-alpha"></div>
 
 <!-- DELETE FROM HERE -->
-		<h1 class="form-title heading-large" data-lang="eng">What is your gender?</h1>
-		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">ما جنسك؟</h1>
+
+<div class="form-group">
+<h1 class="form-title heading-large" data-lang="eng">Check your name against your passport</h1>
+<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">قارن اسمك مع جواز سفرك</h1>
+
+<div class="split-width clearfix">
+    <input type="text" id="checkName" name="checkName" class="form-control check-name-field" value="" maxlength="50">
+</div>
+</div>
+<div class="split-width clearfix">
+<div class="check-your-name-list">
+    <h3>Check you have included:</h3>
+    <ul class="list list-bullet">
+        <li>all names and initials</li>
+        <li>any punctuation, eg dashes or apostrophes</li>
+    </ul>
+</div>
+<div class="check-your-name-list" dir="rtl">
+    <h3>تأكد انك شملت:</h3>
+    <ul class="list list-bullet">
+        <li>كل الأسماء والأحرف</li>
+        <li>كل علامات الترقيم والتشكيل مثل الشرطات والفواصل</li>
+    </ul>
+</div>
+</div>
+
+<a class="button" id="continuebutton" href="passport-number.html"><span data-lang="eng">Yes - my name is correct</span><span data-lang="arabic" dir="rtl" class="rtl-both">نعم - اسمي صحيح</span></a>
+
+<div class="split-width clearfix">
+<div id="change-name-above">
+	<p data-lang="eng">If your name is wrong, just change it above</p>
+	<p data-lang="arabic" dir="rtl">إذا كان اسمك غير صحيح، فغيره بالأعلى</p>
+</div>
+</div>
 
 
-				<fieldset>
-
-						<!--<label for="gender" data-lang="eng">What is your gender?</label>
-						<label for="gender" data-lang="arabic" dir="rtl">ما جنسك؟</label>-->
-						<div class="form-group">
-								<div class="radio-wrapper">
-										<input id="male" name="gender" value="Male" type="radio"  />
-										<label class="block-label" for="male">
-												<span data-lang="eng">Male</span>
-												<span data-lang="arabic" dir="rtl" class="rtl-both">ذكر</span>
-										</label>
-								</div>
-								<div class="radio-wrapper">
-										<input id="female" name="gender" value="Female" type="radio"  />
-										<label class="block-label" for="female">
-												<span data-lang="eng">Female</span>
-												<span data-lang="arabic" dir="rtl" class="rtl-both">أنثى</span>
-										</label>
-								</div>
-						</div>
-				</fieldset>
-
-
-	<div class="form-group">
-		<a class="button" id="continuebutton" href="date-of-birth.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
-	</div>
 
 <!-- STOP DELETING! -->
 

@@ -44,7 +44,7 @@
 		<h1 class="form-title heading-large" data-lang="eng">Have you ever been known by a different name?</h1>
 		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">هل كنت معروفا بأسم مختلف؟</h1>
 
-		<div class="form-group inline">
+		<div class="form-group">
 				<div class="form-group form-group-compound " id="knownByOtherName" data-group-name="knownByOtherName">
 						<div class="radio-wrapper">
 								<input id="knownByOtherNameYes" name="knownByOtherName" value="Yes" type="radio" class="showanyOtherNamesDiv" />
@@ -53,7 +53,7 @@
 										<span data-lang="arabic" dir="rtl" class="rtl-both">نعم</span>
 								</label>
 						</div>
-						<div class="radio-wrapper rightinput">
+						<div class="radio-wrapper">
 								<input id="knownByOtherNameNo" name="knownByOtherName" value="No" type="radio" class="hideanyOtherNamesDiv"  />
 								<label class="block-label" for="knownByOtherNameNo">
 										<span data-lang="eng">No</span>
@@ -62,14 +62,16 @@
 						</div>
 				</div>
 				<div class="panel-indent" data-group-name="anyOtherNames" id="anyOtherNamesDiv" style="display: none">
-						<label for="anyOtherNames" data-lang="eng">Enter your other names</label>
-						<label for="anyOtherNames" data-lang="arabic">أدخل أي أسماء أخرى كنت معروفا بها.</label>
+					<div class="split-width clearfix">
+						<label class="bold-small" for="anyOtherNames" data-lang="eng">Enter your other names</label>
+						<label class="bold-small" for="anyOtherNames" dir="rtl" data-lang="arabic">أدخل أي أسماء أخرى كنت معروفا بها.</label>
+					</div>
 						<input type="text" id="anyOtherNames" name="anyOtherNames" class="form-control" value="" maxlength="50" >
 				</div>
 		</div>
 
 	<div class="form-group">
-		<a class="button" id="continuebutton" href="other-nationalities.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
+		<a class="button" id="continuebutton" href="other-nationalities-currently.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
 	</div>
 
 <!-- STOP DELETING! -->

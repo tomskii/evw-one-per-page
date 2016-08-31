@@ -26,10 +26,10 @@
 	<script>
 	$(document).ready(function(){
 		$(".hideotherTravellersDiv").click(function(){
-				$("#otherTravellersDiv").hide();
+				$("#someoneElseDiv").hide();
 		});
 		$(".showotherTravellersDiv").click(function(){
-				$("#otherTravellersDiv").show();
+				$("#someoneElseDiv").show();
 		});
 	});
 	</script>
@@ -45,7 +45,7 @@
 	<h1 class="form-title heading-large" data-lang="eng">Are you applying for this electronic visa waiver for someone else?</h1>
 	<h1 class="form-title heading-large" data-lang="arabic" dir="rtl" class="rtl-both">هل تقدم طلب الإعفاء الإلكتروني من التأشيرة نيابة عن شخص آخر؟</h1>
 
-	<fieldset class="inline" id="asAnAgent">
+	<fieldset id="asAnAgent">
 			<div class="radio-wrapper">
 					<input id="asAnAgentYes" name="asAnAgent" value="Yes" type="radio" class="showotherTravellersDiv" data-button-page="someone-else-details.html" data-button-id="#continuebutton" />
 					<label class="block-label" for="asAnAgentYes">
@@ -53,7 +53,7 @@
 							<span data-lang="arabic" dir="rtl" class="rtl-both">نعم</span>
 					</label>
 			</div>
-			<div class="radio-wrapper rightinput">
+			<div class="radio-wrapper">
 					<input id="asAnAgentNo" name="asAnAgent" value="No" type="radio" class="hideotherTravellersDiv" />
 					<label class="block-label" for="asAnAgentNo">
 							<span data-lang="eng">No</span>
@@ -61,8 +61,8 @@
 					</label>
 			</div>
 	</fieldset>
-		<div id="otherTravellersDiv" class="panel-indent" data-group-name="otherTravellers" style="display: none">
-				<fieldset class="inline" id="onBehalfOfMinor">
+		<div id="someoneElseDiv" class="panel-indent" data-group-name="otherTravellers" style="display: none">
+				<fieldset id="onBehalfOfMinor">
 					<div class="split-width clearfix">
 						<label class="form-label" for="onBehalfOfMinor" data-lang="eng">Are they under 18?</label>
 						<label class="form-label" for="onBehalfOfMinor" data-lang="arabic" dir="rtl" class="rtl-both">هل هم دون سن 18 عاما ؟</label>
@@ -74,7 +74,7 @@
 										<span data-lang="arabic" dir="rtl" class="rtl-both">نعم</span>
 								</label>
 						</div>
-						<div class="radio-wrapper rightinput">
+						<div class="radio-wrapper">
 								<input id="onBehalfOfMinorNo" name="onBehalfOfMinor" value="No" type="radio"  />
 								<label class="block-label" for="onBehalfOfMinorNo">
 										<span data-lang="eng">No</span>
