@@ -22,6 +22,14 @@
 	<script type="text/javascript" src="scripts/details.polyfill.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
+<script language="JavaScript">
+	function init() {
+	// Clear forms here
+	document.getElementById("name").value = "";
+	}
+	window.onload = init;
+</script>
+
 </head>
 	<body class="js-enabled">
 	<header data-includefile="header"></header>
@@ -31,9 +39,8 @@
 <!-- DELETE FROM HERE -->
 		<h1 class="form-title heading-large" data-lang="eng">What is your full name as written in your passport?</h1>
 		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">أدخل اسمك بالكامل وباللغة الإنجليزية كما هو مكتوبا بجواز سفرك</h1>
-
+<form action="check-name.html" method="GET">
 			<div id="KuwaitName" class="form-group " data-group-name="name">
-
 				<div class="split-width clearfix">
 					<label for="name" data-lang="eng" class="line-height-label"><strong>Write your name in English</strong></label>
 					<label for="name" data-lang="arabic" dir="rtl" class="line-height-label"><strong>اكتب اسمك في اللغة الإنجليزية</strong></label>
@@ -47,9 +54,12 @@
 					<p class="icon-important">You will not be allowed to travel to the UK if your name does not exactly match what is in your passport. Include all initials and any punctuation, for example dashes or apostrophes.</p>
 					<p class="icon-important" dir="rtl">لن يسمح لك بالسفر للمملكة المتحدة إذا لم يتطابق اسمك باللغة الإنجليزية مع اسمك كما هو مكتوبا بجواز سفرك. يجب أن تشمل كل الأحرف وأي علامات ترقيم، مثل الشرطات أو الفاصلات.</p>
 				</div>
-		<a class="button" id="continuebutton" href="check-name.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
-	</div>
 
+				<div id="button-box" class="form-group"><button class="button" id="continue"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" class="rtl-both">استمر</span></button></div>
+
+		<!--<a class="button" id="continuebutton" href="check-name.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>-->
+	</div>
+</form>
 
 <!-- STOP DELETING! -->
 
