@@ -1213,7 +1213,7 @@ label .rtl-both {
 
 @media (max-width: 641px) {
     .form-group {width: 100%}
-    .button {display: block; margin-right: 0; text-align: center}
+    /*  .button {display: block; margin-right: 0; text-align: center}*/
 }
 .form-label, .form-label-bold, legend .form-label-bold {
   display: block;
