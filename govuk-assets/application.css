@@ -2081,3 +2081,7 @@ p.form-hint[dir="rtl"] {font-size: 22px}
 .split-text[dir="rtl"] {float: right}
 }
 .passport-summary-page {width: 160px}
+@media (min-width: 641px){
+.heading-large[dir="rtl"] {
+    margin-top: 1.1em;
+}}
