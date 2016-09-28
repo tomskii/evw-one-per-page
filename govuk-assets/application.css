@@ -1584,7 +1584,6 @@ h2.heading-medium.less-space {margin: 1em 0 0.5em 0}
     height: 120%; }
 
     #summary h2, #imageUpload h2 {
-    color: #6f777b;
     display: inline-block;
     float: left;
     font-family: "nta",Arial,sans-serif;
@@ -1640,7 +1639,7 @@ h2.heading-medium.less-space {margin: 1em 0 0.5em 0}
     line-height: 1.31579;
 }
 #summary h2, #imageUpload h2 {
-    color: #6f777b;
+    color: ##0b0c0c;
     display: inline-block;
     float: left;
     font-family: "nta",Arial,sans-serif;
@@ -1660,7 +1659,7 @@ h2.heading-medium.less-space {margin: 1em 0 0.5em 0}
 #summary p, #imageUpload p {
     display: inline-block;
     font-family: "nta",Arial,sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1.25;
     margin-top: 0;
     text-transform: none;
@@ -1855,46 +1854,7 @@ textarea.form-control {
     z-index: 2;
 }
 .more-margin {margin-top: 20px}
-#summary h2, #imageUpload h2 {
-    font-size: 19px;
-    line-height: 1.31579;
-}
-#summary h2, #imageUpload h2 {
-    color: #000;
-    display: inline-block;
-    float: left;
-    font-family: "nta",Arial,sans-serif;
-    font-weight: 400;
-    line-height: 1.25;
-    margin-right: 20px;
-    text-transform: none;
-    width: 35%;
-}
-#summary .summary-data, #imageUpload .summary-data {
-    display: inline-block;
-    font-weight: bold;
-}
-#summary p, #imageUpload p {
-    font-size: 19px;
-    line-height: 1.31579;
-}
-#summary p, #imageUpload p {
-    display: inline-block;
-    font-family: "nta",Arial,sans-serif;
-    font-weight: 400;
-    line-height: 1.25;
-    margin-top: 0;
-    text-transform: none;
-}
-#summary li, #imageUpload li {
-    border-bottom: 1px solid #dee0e2;
-    margin-bottom: 1em;
-    padding-bottom: 0.5em;
-}
-#summary li {
-    list-style-type: none;
-    padding: 0;
-}
+
 .clearfix {
     overflow: auto;
 }
@@ -2120,3 +2080,4 @@ p.form-hint[dir="rtl"] {font-size: 22px}
 .split-text {width: 48%; float: left}
 .split-text[dir="rtl"] {float: right}
 }
+.passport-summary-page {width: 160px}
