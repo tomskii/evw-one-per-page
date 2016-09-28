@@ -1797,25 +1797,48 @@ ol, ul, nav ol, nav ul {
 [dir='rtl'] ul, [dir='rtl'] ol {
     padding: 0 20px 0 0;
 }
+.passport-upload-guidance-text {
+    float: left;
+    margin-right: 20px;
+    width: 270px;
+}
+.passport-upload-guidance-text[dir="rtl"] {
+    float: right;
+    margin-right: 0;
+}
 .passport-upload-guidance-image {
     width: 340px;
 }
 @media (max-width: 1010px) {
 .passport-upload-guidance-image {
-    width: 100%;
+    width: 50%;
 }}
 @media (max-width: 1010px) {
+.passport-upload-guidance-text {
+    margin: 0 2% 0 0;
+    width: 23%;
+}}
+@media (max-width: 1010px) {
+.passport-upload-guidance-text[dir="rtl"] {
+    float: right;
+    margin-right: 0;
+}}
+@media (max-width: 640px) {
+.passport-upload-guidance-image {
+    width: 100%;
+}}
+@media (max-width: 640px) {
 .passport-upload-guidance-text {
     margin: 20px 0 0;
     width: 50%;
 }}
 
-@media (max-width: 1010px) {
+@media (max-width: 640px) {
 .passport-upload-guidance-text[dir="rtl"] {
     float: right;
     margin-right: 0;
-}
-}
+}}
+
 
 .visually-hidden {display: none}
 .form-control[name$="Address1"], .form-control[name$="Address2"], .form-control[name$="Address3"] {
@@ -2056,7 +2079,7 @@ ul, ol {
 
     .check-name-field {
     width: 100%;
-    font-size: 29px;
+    font-size: 36px;
     font-weight: 700;
     padding: 15px;
     border-width: 1px;
