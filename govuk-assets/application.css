@@ -266,6 +266,15 @@ main {
       font-size: 16px;
       line-height: 1.25; } }
 
+      .bold-small[dir="rtl"] {
+        font-size: 110%;
+      }
+        @media (max-width: 640px) {
+          .bold-small {
+            font-size: 16px;
+            line-height: 1.25; }
+          }
+
 .bold-xsmall {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
@@ -1396,6 +1405,11 @@ h2.heading-medium.less-space {margin: 1em 0 0.5em 0}
 .heading-large.lesspadding {margin-top: 0}
 
 .heading-large {margin-bottom: 1em}
+
+@media (max-width: 640px) {
+.heading-large {margin-bottom: 0.5em}
+}
+
 
 /*.heading-large[dir="rtl"] {margin: 1.25em 0 0.75em 0}*/
 
