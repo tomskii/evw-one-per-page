@@ -2056,7 +2056,7 @@ ul, ol {
     font-size: 36px;
     font-weight: 700;
     padding: 15px;
-    border-width: 1px;
+    border-width: 2px;
 }
 p[dir="rtl"] {font-size: 22px}
 label[dir="rtl"] {font-size: 22px}
