@@ -1,0 +1,113 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>GOV.UK</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+	<!--[if gt IE 8]><!--><link href="/govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<!--[if IE 6]><link href="/govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="/govuk-assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="/govuk-assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<link href="/govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+	<link href="/govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/scripts/form.storage.js"></script>
+	<script type="text/javascript" src="/scripts/application.js"></script>
+	<script type="text/javascript" src="/scripts/details.polyfill.js"></script>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
+</head>
+	<body class="js-enabled">
+	<header data-includefile="header"></header>
+	<main id="content" role="main">
+		<div data-includefile="banner-alpha"></div>
+
+<!-- DELETE FROM HERE -->
+
+<div class="form-group">
+<h1 class="form-title heading-large" data-lang="eng">Check your name against your passport</h1>
+<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">قارن اسمك مع جواز سفرك</h1>
+
+<div class="form-group less-bottom2">
+<div class="playback-container" name="omani-name">
+<div class="split-width clearfix">
+			 <div class="flight-details-container omani-container">
+           <div class="flight-details-row">
+               <div data-lang="eng"><span class="nameCheckLabel">Surname</span></div>
+               <div class="playback-cell omaniNamePlay" data-playback="surname"></div>
+               <div data-lang="arabic" dir="rtl" class="rtl-both"><span class="nameCheckLabel">اللقب</span></div>
+           </div>
+           <div class="flight-details-row">
+               <div data-lang="eng"><span class="nameCheckLabel">Given names</span></div>
+               <div class="playback-cell omaniNamePlay" data-playback="givenname"></div>
+               <div data-lang="arabic" dir="rtl" class="rtl-both"><span class="nameCheckLabel">الاسم الأول</span></div>
+           </div>
+           <div class="flight-details-row">
+               <div data-lang="eng"><span class="nameCheckLabel">Family name</span></div>
+               <div class="playback-cell omaniNamePlay" data-playback="familyname"></div>
+               <div data-lang="arabic" dir="rtl" class="rtl-both"><span class="nameCheckLabel">اسم العائلة</span></div>
+           </div>
+       </div>
+		 </div>
+
+		 <div class="split-width clearfix">
+		 <div class="check-your-name-list">
+		     <h3>Check you have included:</h3>
+		     <ul class="list list-bullet">
+		         <li>all names and initials</li>
+		         <li>any punctuation, for example dashes or apostrophes</li>
+		     </ul>
+		 </div>
+		 <div class="check-your-name-list" dir="rtl">
+		     <h3>تأكد انك شملت:</h3>
+		     <ul class="list list-bullet">
+		         <li>كل أسماؤك</>
+		         <li>أي علامات ترقيم مثل الشرطات او الفاصلة علامات الترقيم والتشكيل مثل الشرطات والفواصل</li>
+		     </ul>
+		 </div>
+		 </div>
+
+	 </div>
+       <div class="form-group" data-group-name="flight-details-check">
+           <fieldset id="flight-details-check">
+               <div class="radio-wrapper">
+                   <input id="flightDetailsCheckYes" name="flightDetailsCheck" data-button-page="passport-number.html" data-button-id="#continuebutton" value="Yes" type="radio">
+                       <label class="block-label" for="flightDetailsCheckYes">
+												 <span data-lang="eng">Yes - I have entered my name correctly</span>
+                       <span data-lang="arabic" dir="rtl" class="rtl-both">لقد دخلت اسمي بشكل صحيح</span>
+                   </label>
+               </div>
+               <div class="radio-wrapper">
+                       <input id="flightDetailsCheckNo" name="flightDetailsCheck" data-button-page="name-multiple.html" data-button-id="#continuebutton" value="No" type="radio">
+                       <label class="block-label" for="flightDetailsCheckNo">
+												 <span data-lang="eng">No - I want to enter my name again</span>
+                       <span data-lang="arabic" dir="rtl" class="rtl-both">أريد أن أدخل اسمي مرة أخرى</span>
+                   </label>
+               </div>
+           </fieldset>
+       </div>
+   </div>
+
+	 <div id="button-box" class="form-group">
+	 <a class="button" id="continuebutton" href=""><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" class="rtl-both">استمر</span></a>
+	 </div>
+
+
+</div>
+
+
+
+
+
+
+<!-- STOP DELETING! -->
+
+	</main>
+	<footer data-includefile="footer"></footer>
+</body>
+</html>

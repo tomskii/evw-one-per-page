@@ -628,13 +628,19 @@ width: 100%;  }
   display: block;
   color: #000;
   margin-bottom: 5px; }
-
 @media (min-width: 641px) {
     .form-hint {margin: 8px 0 8px 0; width: 48%; float: left}
   }
   @media (min-width: 641px) {
       .form-hint[dir="rtl"] {float: right; margin: 8px 0 8px 0; width: 48%}
     }
+#OmaniName .form-hint {
+  width: 48%; float: left
+}
+#OmaniName .form-hint[dir="rtl"] {
+    width: 48%; float: right
+}
+
 .form-control {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
@@ -1625,6 +1631,8 @@ h2.heading-medium.less-space {margin: 1em 0 0.5em 0}
         font-size: 19px;
         line-height: 1.3157894737; } }
 
+/**#summary {border-top: 1px solid #dee0e2;}**/
+
 #summary li .button, #imageUpload li .button {
       width: auto; }
 
@@ -1673,7 +1681,7 @@ h2.heading-medium.less-space {margin: 1em 0 0.5em 0}
 #summary p, #imageUpload p {
     display: inline-block;
     font-family: "nta",Arial,sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1.25;
     margin-top: 0;
     text-transform: none;
@@ -1723,6 +1731,10 @@ h2.heading-medium.less-space {margin: 1em 0 0.5em 0}
 .flight-details-container {
 margin-bottom: 30px;
 }
+
+.flight-details-container.omani-container {border-top: 1px solid #bfc1c3;}
+.flight-details-container.omani-container .flight-details-row {padding-top: 5px}
+
 block-label.selected, .js-enabled block-label.selected, .js-enabled label.selected, .radio-wrapper input:checked + label {
     background: #fff;
     border-color: #0b0c0c;
@@ -2095,7 +2107,19 @@ p.form-hint[dir="rtl"] {font-size: 22px}
 .split-text[dir="rtl"] {float: right}
 }
 .passport-summary-page {width: 160px}
-@media (min-width: 641px){
+@media (min-width: 641px){s
 .heading-large[dir="rtl"] {
     margin-top: 1.1em;
 }}
+@media (min-width: 641px){
+.form-control.omani-field {width: 75%}
+}
+.split-width.omani {margin-top: 30px}
+
+span.nameCheckLabel {font-weight: 700; line-height: 2em}
+
+.omaniNamePlay {font-weight: 900; font-size: 29px; text-transform: uppercase; line-height: 1.5em}
+
+hr.hrdivstyle {border: 0; height: 1px; background: #bfc1c3;}
+.panel-indent.emailsindent {padding: 10px 0 0 15px;
+    margin: 30px 0 30px 0;}

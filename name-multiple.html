@@ -21,13 +21,6 @@
 	<script type="text/javascript" src="/scripts/application.js"></script>
 	<script type="text/javascript" src="/scripts/details.polyfill.js"></script>
 	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
-<script language="JavaScript">
-	function init() {
-	// Clear forms here
-	document.getElementById("name").value = "";
-	}
-	window.onload = init;
-</script>
 
 </head>
 	<body class="js-enabled">
@@ -38,25 +31,44 @@
 <!-- DELETE FROM HERE -->
 		<h1 class="form-title heading-large" data-lang="eng">What is your full name in English as written in your passport?</h1>
 		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">اكتب اسمك بالكامل و باللغة الإنجليزية، كما هو مكتوبا في جواز سفرك.</h1>
-<form action="check-name.html" method="GET">
-			<div id="KuwaitName" class="form-group " data-group-name="name">
+		<form action="check-name-multiple.html" method="GET" name="omani-name">
+			<div id="OmaniName" class="form-group">
 
 				<div class="split-width clearfix">
-					<input type="text" id="name" name="name" class="form-control" value="" maxlength="50">
+					<p class="icon-important">You will not be able to travel to the UK if your name does not match what is in your passport. Include all initials and any punctuation, for example dashes or apostrophes.</p>
+					<p class="icon-important" dir="rtl">أنت لن تكون قادرة على السفر إلى المملكة المتحدة إذا لم اسمك تطابق ما هو في جواز سفرك. تشمل جميع بالاحرف الاولى وأي علامات الترقيم، على سبيل المثال شرطات أو الفواصل العليا.</p>
 				</div>
 
 				<div class="split-width clearfix">
-					<p class="icon-important">
-You will not be allowed to travel if what you enter does not exactly match your passport.</p>
-					<p class="icon-important" dir="rtl">لن يسمح لك بالسفر إذا لم يتطابق ما تدخله بالضبط مع جواز سفرك</p>
+					<label for="surname" class="form-hint bold-small">Surname</label>
+					<label for="surname" class="form-hint bold-small" data-lang="arabic" dir="rtl">اللقب</label>
+					<input type="text" id="surname" name="surname" class="form-control omani-field" value="" maxlength="70" autocomplete="off">
 				</div>
+
+				<div class="split-width omani clearfix">
+					<label for="givenname" class="form-hint bold-small">Given names</label>
+					<label for="givenname" class="form-hint bold-small" data-lang="arabic" dir="rtl">الاسم الأول</label>
+					<p class="form-hint">All your given names as written in your passport</p>
+					<p class="form-hint" data-lang="arabic" dir="rtl">كل ما تبذلونه من إعطاء أسماء كما هو مكتوب في جواز السفر</p>
+					<input type="text" id="givenname" name="givenname" class="form-control omani-field" value="" maxlength="70" autocomplete="off">
+				</div>
+
+				<div class="split-width omani clearfix">
+					<label for="familyname" class="form-hint bold-small">Family name</label>
+					<label for="familyname" class="form-hint bold-small" data-lang="arabic" dir="rtl">اسم العائلة</label>
+					<p class="form-hint">Leave blank if your passport does not have this</p>
+					<p class="form-hint" data-lang="arabic" dir="rtl">أترك فارغا اذا لم يكن موجودا في جواز سفرك</p>
+					<input type="text" id="familyname" name="familyname" class="form-control omani-field" value="" maxlength="70" autocomplete="off">
+				</div>
+
+</div>
 
 				<div id="button-box" class="form-group">
 					<button class="button" id="continue"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" class="rtl-both">استمر</span></button>
 				</div>
 
 		<!--<a class="button" id="continuebutton" href="check-name.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>-->
-	</div>
+
 </form>
 
 <!-- STOP DELETING! -->
