@@ -1511,20 +1511,23 @@ h2.heading-medium.less-space {margin: 1em 0 0.5em 0}
     padding-top: 20px;
 }}
 
-.error-summary {
-    border: 4px solid #b10e1e;
-    padding: 15px 10px 0;
-}
-
 @media (min-width: 641px){
 .error-summary {
     border: 5px solid #b10e1e;
-    padding: 20px 15px 0 15px;
+    padding: 20px 15px 20px 15px;
+    margin-top: 20px
 }}
 
 .error-summary .error-summary-heading {
     margin-top: 0;
 }
+
+.error-summary .error-summary-list a {
+    color: #b10e1e;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.error-summary-list {padding-left: 0}
 .form-group.less-bottom2 {margin-bottom: 0}
 
 .button-secondary {
@@ -2112,10 +2115,16 @@ p.form-hint[dir="rtl"] {font-size: 22px}
     margin-top: 1.1em;
 }}
 @media (min-width: 641px){
-.form-control.omani-field {width: 75%}
+.form-control.omani-field {width: 75%; text-transform: uppercase;}
 }
 .split-width.omani {margin-top: 30px}
 
+.flight-details-row div.label-cell {
+    width: 20%;
+}
+.flight-details-row div.playback-cell {
+    width: 60%;
+}
 span.nameCheckLabel {font-weight: 700; line-height: 2em}
 
 .omaniNamePlay {font-weight: 900; font-size: 29px; text-transform: uppercase; line-height: 1.5em}
@@ -2124,4 +2133,7 @@ hr.hrdivstyle {border: 0; height: 1px; background: #bfc1c3;}
 .panel-indent.emailsindent {padding: 10px 0 0 15px;
     margin: 30px 0 30px 0;}
 
-    /**add some code**/
+.nameError {position: relative; border-left: 5px solid #b10e1e; padding: 5px 0 0 15px; margin-left: -20px}
+
+.form-group.nameCheckButton {margin-top: 30px}
+.form-group.nameChecking {margin-bottom: 0}
