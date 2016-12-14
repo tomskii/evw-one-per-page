@@ -1,0 +1,81 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>GOV.UK</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+	<!--[if gt IE 8]><!--><link href="/govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<!--[if IE 6]><link href="/govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="/govuk-assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="/govuk-assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<link href="/govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+	<link href="/govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/scripts/form.storage.js"></script>
+	<script type="text/javascript" src="/scripts/application.js"></script>
+	<script type="text/javascript" src="/scripts/details.polyfill.js"></script>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
+</head>
+<body>
+
+	<header data-includefile="header"></header>
+	<main id="content" role="main">
+		<div data-includefile="banner-alpha"></div>
+
+<!-- DELETE FROM HERE -->
+	<h1 class="form-title heading-large" data-lang="eng">What is your home address?</h1>
+	<h1 class="form-title heading-large" data-lang="arabic" dir="rtl" class="rtl-both">ما عنوان سكنك؟</h1>
+
+<div class="form-group more-margin">
+	<div class="split-width clearfix">
+	<label class="form-label" data-lang="eng" for="homeAddress1">Enter your main place of residence</label>
+	<label class="form-label" data-lang="arabic" dir="rtl" for="homeAddress1">أدخل عنوان مسكنك الرئيسي؟</label>
+</div>
+	<input type="text" id="homeAddress1" name="homeAddress1" value="" class="form-control" maxlength="35" />
+	<div style="display: inline" class=" " data-group-name="homeAddress2">
+			<label style="display: inline" for="homeAddress2" data-lang="eng"></label>
+			<input type="text" id="homeAddress2" name="homeAddress2" value="" class="form-control" maxlength="35" />
+	</div>
+	<div style="display: inline" class=" " data-group-name="homeAddress3">
+			<label style="display: inline" for="homeAddress3" data-lang="eng"></label>
+			<input type="text" id="homeAddress3" name="homeAddress3" value="" class="form-control" maxlength="35" />
+	</div>
+	<div style="display: inline" class=" " data-group-name="homeAddress4">
+			<label style="display: inline" for="homeAddress4" data-lang="eng"></label>
+			<input type="text" id="homeAddress4" name="homeAddress4" value="" class="form-control" maxlength="35" />
+	</div>
+</div>
+<div class="form-group" data-group-name="homeAddressPostCode">
+	<div class="split-width clearfix">
+		<label class="form-label" for="homeAddressPostCode">Post/zip code</label>
+		<label class="form-label" for="homeAddressPostCode" dir="rtl">الرمز البريدي</label>
+		<input type="text" id="homeAddressPostCode" name="homeAddressPostCode" value="" class="form-control form-control-1-4" maxlength="35" />
+	</div>
+</div>
+<div class="form-group" data-group-name="homeAddressCountry">
+	<div class="split-width clearfix">
+		<label class="form-label" for="homeAddressCountry" data-lang="eng">Country</label>
+		<label class="form-label" for="homeAddressCountry" dir="rtl" data-lang="arabic">الدولة</label>
+	</div>
+		<input type="text" id="homeAddressCountry" name="homeAddressCountry" value="" class="form-control" maxlength="100"/>
+		<input type="hidden" id="homeAddressCountryCode" name="homeAddressCountryCode" value="" maxlength="3" />
+</div>
+
+	<div class="form-group">
+		<a class="button" href="home-numbers.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
+	</div>
+
+
+<!-- STOP DELETING! -->
+
+
+	</main>
+	<footer data-includefile="footer"></footer>
+</body>
+</html>
