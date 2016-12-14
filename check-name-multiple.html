@@ -116,7 +116,17 @@
 
 
 
-
+<script type="text/javascript">
+$('#continuebutton').on('click', function(e) {
+    var yesChecked = $("#nameCheckYes").prop("checked");
+    var noChecked = $("#nameCheckNo").prop("checked");
+    if (!yesChecked && !noChecked) {
+        e.preventDefault();
+        $('.error-summary').parent().show();
+        $('.nameError').addClass('visible');
+    }
+});
+</script>
 
 
 <!-- STOP DELETING! -->
