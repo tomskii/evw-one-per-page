@@ -1,3 +1,3 @@
 #!/bin/bash
 cd "$(dirname "$BASH_SOURCE")"
-python -m SimpleHTTPServer 2020
+python -m SimpleHTTPServer 2121

@@ -324,13 +324,17 @@ main {
 .heading-large {
   font-family: "nta", Arial, sans-serif;
   font-size: 28px;
-  line-height: 1.1111111111;
+  line-height: 1.25em;
   font-weight: 700;
   text-transform: none;
   margin-top: 1.04167em;
   margin-bottom: 0.41667em; }
+  .heading-large[dir="rtl"] {
+    font-size: 32px;
+    line-height: 1.1111111111;
+    margin-top: 1.2em;
+    margin-bottom: 0.41667em; }
 
-  .heading-large[dir="rtl"] {font-size: 34px;}
   @media (max-width: 640px) {
     .heading-large[dir="rtl"] {
       font-size: 28px;
@@ -368,6 +372,11 @@ main {
       .heading-large .heading-secondary {
         padding-top: 6px;
         padding-bottom: 4px; } }
+
+
+
+
+
 
 .heading-medium {
   font-family: "nta", Arial, sans-serif;
@@ -1736,7 +1745,7 @@ h2.heading-medium.less-space {margin: 1em 0 0.5em 0}
 }
 .flight-details-row div {
  float: left;
- padding: 10px 0;
+ padding: 12px 0 8px 0;
  width: 33%;
 }
 .flight-details-container {
@@ -1883,6 +1892,10 @@ ol, ul, nav ol, nav ul {
 textarea.form-control {
     width: 100%;
     height: 10em;
+}
+textarea.form-control.smallertextarea {
+    width: 100%;
+    height: 5em;
 }
 .radio-wrapper input[type="radio"], .radio-wrapper input[type="checkbox"] {
     position: absolute;
@@ -2118,9 +2131,9 @@ p.form-hint[dir="rtl"] {font-size: 22px}
 .split-text[dir="rtl"] {float: right}
 }
 .passport-summary-page {width: 160px}
-@media (min-width: 641px){s
+@media (min-width: 641px){
 .heading-large[dir="rtl"] {
-    margin-top: 1.1em;
+    margin-top: 1.2em;
 }}
 @media (min-width: 641px){
 .form-control.omani-field {width: 75%}
@@ -2141,8 +2154,6 @@ hr.hrdivstyle {border: 0; height: 1px; background: #bfc1c3;}
 .panel-indent.emailsindent {padding: 10px 0 0 15px;
     margin: 30px 0 30px 0;}
 
-.capsup {}
-
 @media (min-width: 641px){
 .nameError.visible {position: relative; border-left: 5px solid #b10e1e; padding: 5px 0 0 15px; margin-left: -20px}
 }
@@ -2152,3 +2163,4 @@ hr.hrdivstyle {border: 0; height: 1px; background: #bfc1c3;}
 
 .form-group.nameCheckButton {margin-top: 30px}
 .form-group.nameChecking {margin-bottom: 0}
+.arabic-half p {line-height: 1.1em; margin-bottom: .7em}
