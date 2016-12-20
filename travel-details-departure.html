@@ -25,9 +25,11 @@
 	$(document).ready(function(){
 		$(".hideDiv").click(function(){
 				$("#previousNationalitiesDiv").hide();
+				$("#noDetailsDiv").show();
 		});
 		$(".showDiv").click(function(){
 				$("#previousNationalitiesDiv").show();
+				$("#noDetailsDiv").hide();
 		});
 	});
 	</script>
@@ -55,7 +57,7 @@
 						</label>
 				</div>
 				<div class="radio-wrapper">
-						<input id="knowDepartureDetailsNo" name="knowDepartureDetails"  data-button-page="uk-how-long.html" data-button-id="#continuebutton" value="No" type="radio" class="hideDiv" />
+						<input id="knowDepartureDetailsNo" name="knowDepartureDetails"  data-button-page="more-than-one-trip.html" data-button-id="#continuebutton" value="No" type="radio" class="hideDiv" />
 						<label class="block-label" for="knowDepartureDetailsNo">
 								<span data-lang="eng">No</span>
 								<span data-lang="arabic" dir="rtl" class="rtl-both">لا</span>
@@ -114,7 +116,35 @@
 				<input type="text" id="portOfDeparture" class="nojs-hidden form-control" name="portOfDeparture" maxlength="95" />
 </div>
 
-
+<div class="panel-indent" id="noDetailsDiv" style="display:none; margin-bottom: 30px">
+	<div class="split-width clearfix">
+		<label class="form-label" data-lang="eng">How long are you staying in the UK for?</label>
+		<label class="form-label" data-lang="arabic" dir="rtl" class="rtl-both">كم ستظل بالمملكة المتحدة؟</label>
+	</div>
+			<div class="form-group"  data-group-name="ukDuration" style="margin-bottom: 0">
+					<div class="radio-wrapper">
+							<input id="ukDurationOneMonth" name="ukDuration" value="Less than 1 month" type="radio"  />
+							<label class="block-label" for="ukDurationOneMonth">
+									<span data-lang="eng">Less than 1 month</span>
+									<span data-lang="arabic" dir="rtl" class="rtl-both">أقل من شهر</span>
+							</label>
+					</div>
+					<div class="radio-wrapper">
+							<input id="ukDurationOneToThreeMonths" name="ukDuration" value="1 to 3 months" type="radio"  />
+							<label class="block-label" for="ukDurationOneToThreeMonths">
+									<span data-lang="eng">1 to 3 months</span>
+									<span data-lang="arabic" dir="rtl" class="rtl-both">1 الى 3 أشهر</span>
+							</label>
+					</div>
+					<div class="radio-wrapper">
+							<input id="ukDurationThreeToSixMonths" name="ukDuration" value="3 to 6 months" type="radio"  />
+							<label class="block-label" for="ukDurationThreeToSixMonths">
+									<span data-lang="eng">3 to 6 months</span>
+									<span data-lang="arabic" dir="rtl" class="rtl-both">3 الى 6 أشهر</span>
+							</label>
+					</div>
+			</div>
+</div>
 
 	<div class="form-group">
 		<a class="button" href="more-than-one-trip.html" id="continuebutton"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
