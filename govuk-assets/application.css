@@ -1753,6 +1753,11 @@ h2.heading-medium.less-space {margin: 1em 0 0.5em 0}
  padding: 12px 0 8px 0;
  width: 33%;
 }
+
+.flight-details-row.passportplayback div {
+ padding: 12px 0;
+}
+
 .flight-details-container {
 margin-bottom: 30px;
 }
@@ -2151,6 +2156,11 @@ p.form-hint[dir="rtl"] {font-size: 22px}
 .flight-details-row div.playback-cell {
     width: 60%;
 }
+
+.flight-details-row.passportplayback div.playback-cell {
+    width: 100%;
+}
+
 span.nameCheckLabel {font-weight: 700; line-height: 2em}
 
 .omaniNamePlay {font-weight: 900; font-size: 29px; line-height: 1.5em}
@@ -2164,7 +2174,7 @@ hr.hrdivstyle {border: 0; height: 1px; background: #bfc1c3;}
 }
 .nameError.visible {position: relative; border-left: 4px solid #b10e1e; padding: 5px 0 0 15px; margin-left: -5px}
 
-.error-message {font-size: 19px; font-weight: bold; color: #b10e1e;}
+.error-message {font-size: 19px; font-weight: bold; color: #b10e1e; width: 50%; float: left}
 
 .form-group.nameCheckButton {margin-top: 30px}
 .form-group.nameChecking {margin-bottom: 0}
@@ -2173,4 +2183,12 @@ hr.hrdivstyle {border: 0; height: 1px; background: #bfc1c3;}
 summary span {text-decoration: underline;}
 summary span[dir="rtl"] {float: right}
 
-/* force upload with this change
+/* loading pages */
+
+.loadingWrapper {width: 100%; height: 350px; text-align: center; padding-top: 100px}
+.loadingWrapper p {z-index: 15; margin-top: -70px; font-size: 21px; font-weight: bold}
+.arabicBigger {font-size: 23px}
+
+.heading-medium.error-summary-heading {width: 50%; float: left; margin-bottom: 10px}
+.heading-medium.error-summary-heading, .error-summary-list {width: 50%; float: left}
+.error-message[dir="rtl"], .error-summary-list[dir="rtl"] {float: right; font-size: 120%}

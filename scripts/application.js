@@ -6,7 +6,7 @@ function unWrapPlaceholder(){
 $( document ).ready(function() {
   $('[data-includefile]').each(function(){
     var file = $(this).attr("data-includefile");
-    $(this).load("includes/"+$(this).attr("data-includefile")+".html", unWrapPlaceholder)
+    $(this).load("/includes/"+$(this).attr("data-includefile")+".html", unWrapPlaceholder)
   });
 
   //write to local storage
