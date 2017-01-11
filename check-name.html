@@ -21,25 +21,9 @@
 	<script type="text/javascript" src="/scripts/application.js"></script>
 	<script type="text/javascript" src="/scripts/details.polyfill.js"></script>
 	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
+	<script>
 
-	<script language="JavaScript">
-	  function processForm()
-	  {
-	    var parameters = location.search.substring(1).split("&");
-	    var temp = parameters[0].split("=");
-			l = decodeURI(temp[1]);
-	    l = l.replace('+',' ');
-			l = l.replace('+',' ');
-			l = l.replace('+',' ');
-			l = l.replace('+',' ');
-			l = l.replace('+',' ');
-	  }
-	  processForm();
-		$(document).ready(function(){
-				$('#checkName').attr('value',l);
-		})
 	</script>
-	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
 </head>
 	<body class="js-enabled">
 	<header data-includefile="header"></header>
@@ -48,40 +32,94 @@
 
 <!-- DELETE FROM HERE -->
 
+<div class"hideError" style="display:none">
+	<div class="error-summary clearfix" tabindex="-1">
+	  <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">Check your answer</h1>
+		<h1 class="heading-medium error-summary-heading" data-lang="arabic" dir="rtl">تحقق من إجابتك</h1>
+	  <ul class="error-summary-list">
+	    <li><a href="#recheckYourName">Select whether you have entered your name correctly</a></li>
+	  </ul>
+		<ul class="error-summary-list" data-lang="arabic" dir="rtl">
+	    <li><a href="#recheckYourName">تحديد ما إذا كنت قد أدخلت اسمك بشكل صحيح</a></li>
+	  </ul>
+
+
+	</div>
+</div>
+
 <div class="form-group">
 <h1 class="form-title heading-large" data-lang="eng">Check your name against your passport</h1>
 <h1 class="form-title heading-large" data-lang="arabic" dir="rtl">قارن اسمك مع جواز سفرك</h1>
 
+<div class="form-group less-bottom2">
+<div class="playback-container" name="singlename">
 <div class="split-width clearfix">
-    <input type="text" id="checkName" name="checkName" class="form-control check-name-field" maxlength="50">
-</div>
-</div>
-<div class="split-width clearfix">
-<div class="check-your-name-list">
-    <h3>Check you have included:</h3>
-    <ul class="list list-bullet">
-        <li>all names and initials</li>
-        <li>any punctuation, for example dashes or apostrophes</li>
-    </ul>
-</div>
-<div class="check-your-name-list" dir="rtl">
-    <h3>تأكد انك شملت:</h3>
-    <ul class="list list-bullet">
-        <li>كل أسماؤك</>
-        <li>أي علامات ترقيم مثل الشرطات او الفاصلة علامات الترقيم والتشكيل مثل الشرطات والفواصل</li>
-    </ul>
-</div>
+			 <div class="flight-details-container omani-container" id="recheckYourName">
+           <div class="flight-details-row">
+               <div class="playback-cell omaniNamePlay" data-playback="singlename"></div>
+           </div>
+       </div>
+		 </div>
+
+		 <div class="split-width clearfix">
+		 <div class="check-your-name-list">
+		     <h3>Check you have included:</h3>
+		     <ul class="list list-bullet">
+		         <li>all names and initials</li>
+		         <li>any punctuation, for example dashes or apostrophes</li>
+		     </ul>
+		 </div>
+		 <div class="check-your-name-list" dir="rtl">
+		     <h3>تأكد انك شملت:</h3>
+		     <ul class="list list-bullet">
+		         <li>كل أسماؤك</>
+		         <li>أي علامات ترقيم مثل الشرطات او الفاصلة علامات الترقيم والتشكيل مثل الشرطات والفواصل</li>
+		     </ul>
+		 </div>
+		 </div>
+
+	 </div>
+       <div class="nameError clearfix">
+				 <span class="error-message" style="display:none">Select whether you have entered your name correctly</span>
+				 <span class="error-message" style="display:none" dir="rtl" class="rtl-both">تحديد ما إذا كنت قد أدخلت اسمك بشكل صحيح</span>
+				 <div class="form-group nameChecking" data-group-name="nameCheck">
+           <fieldset>
+               <div class="radio-wrapper">
+                   <input id="nameCheckYes" name="nameCheck" data-button-page="passport-number.html" data-button-id="#continuebutton" value="Yes" type="radio">
+                       <label class="block-label" for="nameCheckYes">
+												 <span data-lang="eng">Yes - I have entered my name correctly</span>
+                       <span data-lang="arabic" dir="rtl" class="rtl-both">نعم – لقد أدخلت أسمي بشكل صحيح	 </span>
+                   </label>
+               </div>
+               <div class="radio-wrapper">
+                       <input id="nameCheckNo" name="nameCheck" data-button-page="name.html" data-button-id="#continuebutton" value="No" type="radio">
+                       <label class="block-label" for="nameCheckNo">
+												 <span data-lang="eng">No - I want to enter my name again</span>
+                       <span data-lang="arabic" dir="rtl" class="rtl-both">لا – أريد أن أدخل اسمي مرة أخرى	 </span>
+                   </label>
+               </div>
+           </fieldset>
+       </div>
+		 </div>
+   </div>
+
+	 <div id="button-box" class="form-group nameCheckButton">
+	 <a class="button" id="continuebutton" href=""><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" class="rtl-both">استمر</span></a>
+	 </div>
 </div>
 
-<a class="button" id="continuebutton" href="passport-number.html"><span data-lang="eng">Yes - my name is correct</span><span data-lang="arabic" dir="rtl" class="rtl-both">نعم - اسمي صحيح</span></a>
-
-<div class="split-width clearfix">
-<div id="change-name-above">
-	<p data-lang="eng">If your name is wrong, just change it above</p>
-	<p data-lang="arabic" dir="rtl">إذا كان اسمك غير صحيح، فغيره بالأعلى</p>
-</div>
-</div>
-
+<script type="text/javascript">
+$('#continuebutton').on('click', function(e) {
+    var yesChecked = $("#nameCheckYes").prop("checked");
+    var noChecked = $("#nameCheckNo").prop("checked");
+    if (!yesChecked && !noChecked) {
+        e.preventDefault();
+        $('.error-summary').parent().show();
+				$('.error-message').show();
+        $('.nameError').addClass('visible');
+    }
+});
+</script>
 
 
 <!-- STOP DELETING! -->
