@@ -1266,6 +1266,15 @@ p.icon-important[dir="rtl"]  {
     width: 42%;
     float: right
 }}
+
+p.icon-important.fullwidthimportant {width: 90%}
+
+@media (min-width: 641px) {
+p.icon-important.fullwidthimportant {width: 90%}}
+@media (min-width: 641px) {
+p.icon-important.fullwidthimportant {width: 90%}}
+
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2), not all, not all, not all, only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
 .icon-important {
     background-image: url("../images/icon-important-2x.png");
