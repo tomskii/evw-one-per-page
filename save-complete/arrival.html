@@ -28,46 +28,58 @@
 		<div data-includefile="banner-alpha"></div>
 
 <!-- DELETE FROM HERE -->
-		<h1 class="form-title heading-large" data-lang="eng">When does your passport expire?</h1>
-		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">ما تاريخ انتهاء جواز سفرك؟</h1>
-
-		<div class="form-group date-group " data-group-name="passportExpiry">
-				<fieldset class="inline" id="passportExpiry">
-
-						<div class="form-date" id="dateOfExpiry">
+		<h1 class="form-title heading-large" data-lang="eng">How will you arrive in the UK?</h1>
+		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">بأي وسيلة نقل ستصل للمملكة المتحدة؟</h1>
 
 
-							<div class="split-width more-margin-bottom clearfix">
-								<p class="form-hint" data-lang="eng">For example, 25 3 2025</p>
-								<p class="form-hint rtl-both" data-lang="arabic" dir="rtl">على سبيل المثال، 2025 3 25</p>
+					<div class="form-group " data-group-name="departureMode" id="departureMode">
+							<!--<label for="departureMode" data-lang="eng">How will you arrive in the UK?</label>
+							<label for="departureMode" data-lang="arabic">بأي وسيلة نقل ستصل للمملكة المتحدة؟</label>-->
+
+							<div class="radio-wrapper">
+									<input id="byPlane" name="departureMode" value="Plane" type="radio" data-storage="Air" >
+									<label class="block-label" for="byPlane">
+											<span data-lang="eng">By plane</span>
+											<span data-lang="arabic" dir="rtl" class="rtl-both">طائرة</span>
+									</label>
 							</div>
+							<div class="radio-wrapper">
+									<input id="byTrain" name="departureMode" value="Train" type="radio" data-storage="Train" >
+									<label class="block-label" for="byTrain">
+											<span data-lang="eng">By train</span>
+											<span data-lang="arabic" dir="rtl" class="rtl-both">قطار</span>
+									</label>
+							</div>
+							<div class="radio-wrapper">
+									<input id="byPrivatePlane" name="departureMode" value="Private Plane" type="radio" data-storage="PrivatePlane" >
+									<label class="block-label" for="byPrivatePlane">
+											<span data-lang="eng">By private plane</span>
+											<span data-lang="arabic" dir="rtl" class="rtl-both">بالطائرة الخاصة</span>
+									</label>
+							</div>
+							<div class="radio-wrapper">
+									<input id="bySea" name="departureMode" value="Boat" type="radio" data-storage="Sea" >
+									<label class="block-label" for="bySea">
+											<span data-lang="eng">By boat</span>
+											<span data-lang="arabic" dir="rtl" class="rtl-both">سفينة</span>
+									</label>
+							</div>
+							<div class="radio-wrapper">
+									<input id="byLand" name="departureMode" value="Land" type="radio" data-storage="Land" >
+									<label class="block-label" for="byLand">
+											<span data-lang="eng">By road (from the Republic of Ireland)</span>
+											<span data-lang="arabic" dir="rtl" class="rtl-both">عبرا لطرق (من جمهورية إيرلندا)</span>
+									</label>
+							</div>
+					</div>
 
-								<div class="form-group form-group-day">
-										<label for="doeDay"><span data-lang="eng">Day</span></label>
-										<label for="doeDay" data-lang="arabic" dir="rtl" class="rtl-both">اليوم</label>
-										<input type="text" class="form-control" id="doeDay" name="doeDay" aria-required="true" value="" maxlength="2">
-								</div>
-								<div class="form-group form-group-month">
-										<label for="doeMonth"><span data-lang="eng">Month</span></label>
-										<label for="doeMonth" data-lang="arabic" dir="rtl" class="rtl-both">الشهر</label>
-										<input type="text" class="form-control" id="doeMonth" name="doeMonth" aria-required="true" value="" maxlength="2">
-								</div>
-								<div class="form-group form-group-year">
-										<label for="doeYear"><span data-lang="eng">Year</span></label>
-										<label for="doeYear" data-lang="arabic" dir="rtl" class="rtl-both">السنة</label>
-										<input type="text" class="form-control" id="doeYear" name="doeYear" aria-required="true" value="" maxlength="4">
-								</div>
-						</div>
-				</fieldset>
-		</div>
 	<div class="form-group">
-		<a class="button" id="continuebutton" href="passport-issued-where.html"><span data-lang="eng">Save and continue</span>&nbsp;&nbsp;<span data-lang="arabic" dir="rtl" >الحفظ والمتابعة</span></a>
+		<a class="button" id="continuebutton" href="flight-number.html"><span data-lang="eng">Save and continue</span>&nbsp;&nbsp;<span data-lang="arabic" dir="rtl" >الحفظ والمتابعة</span></a>
 	</div>
 	<div class="split-width clearfix">
 		<span class="fullwidthLinks" data-lang="eng"><a href="save-and-complete.html">Save and complete later</a></span>
 		<span class="fullwidthLinks" data-lang="arabic" dir="rtl"><a href="save-and-complete.html">العودة إلى التطبيق الخاص بك</a></span>
 	</div>
-
 <!-- STOP DELETING! -->
 
 	</main>
