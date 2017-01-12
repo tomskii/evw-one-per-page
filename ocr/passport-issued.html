@@ -28,20 +28,39 @@
 		<div data-includefile="banner-alpha"></div>
 
 <!-- DELETE FROM HERE -->
-		<h1 class="form-title heading-large" data-lang="eng">What is your passport number?</h1>
-		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">ما رقم جواز سفرك؟</h1>
+		<h1 class="form-title heading-large" data-lang="eng">When was your passport issued?</h1>
+		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">ما تاريخ إصدار جواز سفرك؟</h1>
 
-		<div class="form-group date-group " data-group-name="passportNumber">
-			<div class="split-width clearfix">
-				<p class="form-hint">Use the number on your passport photo page, include any zeros at the start</p>
-				<p class="form-hint" data-lang="arabic" dir="rtl">أدخله بالضبط كما هو مبين في صفحة المعلومات الشخصية في جواز سفرك بما فيه الأصفار البادئة</p>
-			</div>
-			<div class="split-width clearfix">
-				<input type="text" id="passportNumber" name="passportNumber" minlength="4" maxlength="15" class="form-control" value="" autocomplete="off">
-			</div>
-		</div>
+		<fieldset id="passportIssueDate">
+
+				<!-- <label for="passportIssueDate" class="date-field" data-lang="eng">When was your passport issued?</label>
+				<label for="passportIssueDate" class="date-field" data-lang="arabic">ما تاريخ إصدار جواز سفرك؟</label>-->
+<div class="split-width more-margin-bottom clearfix">
+				<p class="form-hint" data-lang="eng">For example, 30 9 2010</p>
+				<p class="form-hint rtl-both" data-lang="arabic" dir="rtl">على سبيل المثال، 2010 9 30</p>
+</div>
+				<div class="form-group form-date" id="dateOfIssue">
+
+						<div class="form-group form-group-day">
+								<label for="doiDay"><span data-lang="eng">Day</span></label>
+								<label for="doiDay" data-lang="arabic" dir="rtl" class="rtl-both">اليوم</label>
+								<input type="text" class="form-control" id="doiDay" name="doiDay" aria-required="true" maxlength="2" value="">
+						</div>
+						<div class="form-group form-group-month">
+								<label for="doiMonth"><span data-lang="eng">Month</span> </label>
+								<label for="doiMonth" data-lang="arabic" dir="rtl" class="rtl-both">الشهر</label>
+								<input type="text" class="form-control" id="doiMonth" name="doiMonth" aria-required="true" maxlength="2" value="">
+						</div>
+						<div class="form-group form-group-year">
+								<label for="doiYear"><span data-lang="eng">Year</span> </label>
+								<label for="doiYear" data-lang="arabic" dir="rtl" class="rtl-both">السنة</label>
+								<input type="text" class="form-control" id="doiYear" name="doiYear" aria-required="true" maxlength="4" value="">
+						</div>
+				</div>
+		</fieldset>
+
 	<div class="form-group">
-		<a class="button" id="continuebutton" href="passport-issued.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
+		<a class="button" id="continuebutton" href="passport-expire.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
 	</div>
 
 

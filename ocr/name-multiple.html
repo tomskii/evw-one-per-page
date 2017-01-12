@@ -1,0 +1,79 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>GOV.UK</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+	<!--[if gt IE 8]><!--><link href="/govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<!--[if IE 6]><link href="/govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="/govuk-assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="/govuk-assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<link href="/govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+	<link href="/govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/scripts/form.storage.js"></script>
+	<script type="text/javascript" src="/scripts/application.js"></script>
+	<script type="text/javascript" src="/scripts/details.polyfill.js"></script>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
+
+</head>
+	<body class="js-enabled">
+	<header data-includefile="header"></header>
+	<main id="content" role="main">
+		<div data-includefile="banner-alpha"></div>
+
+<!-- DELETE FROM HERE -->
+		<h1 class="form-title heading-large" data-lang="eng">What is your full name in English as written in your passport?</h1>
+		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl"> ما اسمك الكامل باللغة الإنجليزية كما هو مكتوبا في جواز سفرك؟	 </h1>
+		<form action="check-name-multiple.html" method="GET" name="omani-name">
+			<div id="OmaniName" class="form-group">
+
+				<div class="split-width clearfix">
+					<p class="icon-important">You will not be able to travel to the UK if your name does not match what is in your passport. Include all initials and any punctuation, for example dashes or apostrophes.</p>
+					<p class="icon-important" dir="rtl">لن تستطيع السفر للمملكة المتحدة إذا لم يتطابق اسمك مع ما هو مكتوبا في جواز سفرك. أشمل كل الأحرف وأي علامات ترقيم مثل الشرطات أو الفاصلات</p>
+				</div>
+
+				<div class="split-width clearfix">
+					<label for="surname" class="form-hint bold-small">Surname</label>
+					<label for="surname" class="form-hint bold-small" data-lang="arabic" dir="rtl">اللقب</label>
+					<input type="text" id="surname" name="surname" class="form-control omani-field" value="" maxlength="70" autocomplete="off">
+				</div>
+
+				<div class="split-width omani clearfix">
+					<label for="givenname" class="form-hint bold-small">Given names</label>
+					<label for="givenname" class="form-hint bold-small" data-lang="arabic" dir="rtl">الاسم الأول</label>
+					<p class="form-hint">All your given names as written in your passport</p>
+					<p class="form-hint" data-lang="arabic" dir="rtl">كل أسماؤك كما هي مكتوبة في جواز سفرك</p>
+					<input type="text" id="givenname" name="givenname" class="form-control omani-field" value="" maxlength="70" autocomplete="off">
+				</div>
+
+				<div class="split-width omani clearfix">
+					<label for="familyname" class="form-hint bold-small">Family name</label>
+					<label for="familyname" class="form-hint bold-small" data-lang="arabic" dir="rtl">اسم العائلة</label>
+					<p class="form-hint">Leave blank if your passport does not have this</p>
+					<p class="form-hint" data-lang="arabic" dir="rtl">أترك فارغا اذا لم يكن موجودا في جواز سفرك</p>
+					<input type="text" id="familyname" name="familyname" class="form-control omani-field" value="" maxlength="70" autocomplete="off">
+				</div>
+
+</div>
+
+				<div id="button-box" class="form-group">
+					<button class="button" id="continue"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" class="rtl-both">استمر</span></button>
+				</div>
+
+		<!--<a class="button" id="continuebutton" href="check-name.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>-->
+
+</form>
+
+<!-- STOP DELETING! -->
+
+	</main>
+	<footer data-includefile="footer"></footer>
+</body>
+</html>

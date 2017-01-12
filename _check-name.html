@@ -21,6 +21,7 @@
 	<script type="text/javascript" src="/scripts/application.js"></script>
 	<script type="text/javascript" src="/scripts/details.polyfill.js"></script>
 	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css" />
 </head>
 	<body class="js-enabled">
 	<header data-includefile="header"></header>
@@ -28,21 +29,41 @@
 		<div data-includefile="banner-alpha"></div>
 
 <!-- DELETE FROM HERE -->
-		<h1 class="form-title heading-large" data-lang="eng">What is your passport number?</h1>
-		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">ما رقم جواز سفرك؟</h1>
 
-		<div class="form-group date-group " data-group-name="passportNumber">
-			<div class="split-width clearfix">
-				<p class="form-hint">Use the number on your passport photo page, include any zeros at the start</p>
-				<p class="form-hint" data-lang="arabic" dir="rtl">أدخله بالضبط كما هو مبين في صفحة المعلومات الشخصية في جواز سفرك بما فيه الأصفار البادئة</p>
-			</div>
-			<div class="split-width clearfix">
-				<input type="text" id="passportNumber" name="passportNumber" minlength="4" maxlength="15" class="form-control" value="" autocomplete="off">
-			</div>
-		</div>
-	<div class="form-group">
-		<a class="button" id="continuebutton" href="passport-issued.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
-	</div>
+<div class="form-group">
+<h1 class="form-title heading-large" data-lang="eng">Check your name against your passport</h1>
+<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">قارن اسمك مع جواز سفرك</h1>
+
+<div class="split-width clearfix">
+    <input type="text" id="checkName" name="checkName" class="form-control check-name-field" maxlength="50">
+</div>
+</div>
+<div class="split-width clearfix">
+<div class="check-your-name-list">
+    <h3>Check you have included:</h3>
+    <ul class="list list-bullet">
+        <li>all names and initials</li>
+        <li>any punctuation, for example dashes or apostrophes</li>
+    </ul>
+</div>
+<div class="check-your-name-list" dir="rtl">
+    <h3>تأكد انك شملت:</h3>
+    <ul class="list list-bullet">
+        <li>كل أسماؤك</>
+        <li>أي علامات ترقيم مثل الشرطات او الفاصلة علامات الترقيم والتشكيل مثل الشرطات والفواصل</li>
+    </ul>
+</div>
+</div>
+
+<a class="button" id="continuebutton" href="passport-number.html"><span data-lang="eng">Yes - my name is correct</span><span data-lang="arabic" dir="rtl" class="rtl-both">نعم - اسمي صحيح</span></a>
+
+<div class="split-width clearfix">
+<div id="change-name-above">
+	<p data-lang="eng">If your name is wrong, just change it above</p>
+	<p data-lang="arabic" dir="rtl">إذا كان اسمك غير صحيح، فغيره بالأعلى</p>
+</div>
+</div>
+
 
 
 <!-- STOP DELETING! -->

@@ -22,30 +22,49 @@
 	<script type="text/javascript" src="/scripts/details.polyfill.js"></script>
 	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
 </head>
-	<body class="js-enabled">
+<body>
+
 	<header data-includefile="header"></header>
 	<main id="content" role="main">
 		<div data-includefile="banner-alpha"></div>
 
 <!-- DELETE FROM HERE -->
-		<h1 class="form-title heading-large" data-lang="eng">What is your passport number?</h1>
-		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">ما رقم جواز سفرك؟</h1>
-
-		<div class="form-group date-group " data-group-name="passportNumber">
-			<div class="split-width clearfix">
-				<p class="form-hint">Use the number on your passport photo page, include any zeros at the start</p>
-				<p class="form-hint" data-lang="arabic" dir="rtl">أدخله بالضبط كما هو مبين في صفحة المعلومات الشخصية في جواز سفرك بما فيه الأصفار البادئة</p>
-			</div>
-			<div class="split-width clearfix">
-				<input type="text" id="passportNumber" name="passportNumber" minlength="4" maxlength="15" class="form-control" value="" autocomplete="off">
-			</div>
+<div class="form-group">
+	<h1 class="heading-large" data-lang="eng">How long are you staying in the UK for?</h1>
+	<h1 class="heading-large" data-lang="arabic" dir="rtl" class="rtl-both">كم ستظل بالمملكة المتحدة؟</h1>
+</div>
+		<div class="form-group"  data-group-name="ukDuration">
+				<div class="radio-wrapper">
+						<input id="ukDurationOneMonth" name="ukDuration" value="Less than 1 month" type="radio"  />
+						<label class="block-label" for="ukDurationOneMonth">
+								<span data-lang="eng">Less than 1 month</span>
+								<span data-lang="arabic" dir="rtl" class="rtl-both">أقل من شهر</span>
+						</label>
+				</div>
+				<div class="radio-wrapper">
+						<input id="ukDurationOneToThreeMonths" name="ukDuration" value="1 to 3 months" type="radio"  />
+						<label class="block-label" for="ukDurationOneToThreeMonths">
+								<span data-lang="eng">1 to 3 months</span>
+								<span data-lang="arabic" dir="rtl" class="rtl-both">1 الى 3 أشهر</span>
+						</label>
+				</div>
+				<div class="radio-wrapper">
+						<input id="ukDurationThreeToSixMonths" name="ukDuration" value="3 to 6 months" type="radio"  />
+						<label class="block-label" for="ukDurationThreeToSixMonths">
+								<span data-lang="eng">3 to 6 months</span>
+								<span data-lang="arabic" dir="rtl" class="rtl-both">3 الى 6 أشهر</span>
+						</label>
+				</div>
 		</div>
+
+
 	<div class="form-group">
-		<a class="button" id="continuebutton" href="passport-issued.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
+		<a class="button" href="more-than-one-trip.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
 	</div>
 
 
 <!-- STOP DELETING! -->
+
 
 	</main>
 	<footer data-includefile="footer"></footer>

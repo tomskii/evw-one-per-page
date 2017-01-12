@@ -22,26 +22,30 @@
 	<script type="text/javascript" src="/scripts/details.polyfill.js"></script>
 	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
 </head>
-	<body class="js-enabled">
+<body>
+
 	<header data-includefile="header"></header>
 	<main id="content" role="main">
 		<div data-includefile="banner-alpha"></div>
 
 <!-- DELETE FROM HERE -->
-		<h1 class="form-title heading-large" data-lang="eng">What is your passport number?</h1>
-		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">ما رقم جواز سفرك؟</h1>
+<div class="form-group">
+       <h1 class="form-title heading-large" data-lang="eng">We can’t find your flight</h1>
+       <h1 class="form-title heading-large" data-lang="arabic" dir="rtl">لا نستطيع ان نجد رحلتك</h1>
 
-		<div class="form-group date-group " data-group-name="passportNumber">
-			<div class="split-width clearfix">
-				<p class="form-hint">Use the number on your passport photo page, include any zeros at the start</p>
-				<p class="form-hint" data-lang="arabic" dir="rtl">أدخله بالضبط كما هو مبين في صفحة المعلومات الشخصية في جواز سفرك بما فيه الأصفار البادئة</p>
-			</div>
-			<div class="split-width clearfix">
-				<input type="text" id="passportNumber" name="passportNumber" minlength="4" maxlength="15" class="form-control" value="" autocomplete="off">
-			</div>
-		</div>
+<div class="split-width clearfix">
+			 <p class="panel-indent flightnumber">This might be because the flight you entered doesn’t land in the UK. For example, if you are flying from Kuwait to Doha, then Doha to London, we just need the number for the Doha to London flight.</p>
+			 <p class="panel-indent flightnumber" data-lang="arabic" dir="rtl">
+لربما لأنك أدخلت الرحلة التي لن تهبط في المملكة المتحدة. مثلا، اذا سافرت من الكويت الى الدوحة، وثم من الدوحة الى لندن، فنحتاج فقط رقم الرحلة من الدوحة الى لندن.</p></div>
+   </div>
 	<div class="form-group">
-		<a class="button" id="continuebutton" href="passport-issued.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
+		<a class="button" href="flight-number.html"><span data-lang="eng">Re-try</span><span data-lang="arabic" dir="rtl" >أعد المحاولة</span></a>
+	</div>
+	<div class="form-group">
+		<div class="split-width clearfix">
+		<a class="half-link" href="end.html"><span data-lang="eng">I will enter my flight details manually</span></a>
+		<a class="half-link" href="end.html"><span  data-lang="arabic" dir="rtl" class="rtl-both">سأدخل معلومات رحلتي يدويا</span></a>
+		<div class="split-width clearfix">
 	</div>
 
 

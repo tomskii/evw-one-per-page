@@ -1,0 +1,160 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>GOV.UK</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+	<!--[if gt IE 8]><!--><link href="/govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<!--[if IE 6]><link href="/govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="/govuk-assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="/govuk-assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<link href="/govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+	<link href="/govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/scripts/form.storage.js"></script>
+	<script type="text/javascript" src="/scripts/application.js"></script>
+	<script type="text/javascript" src="/scripts/details.polyfill.js"></script>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
+	<script>
+	$(document).ready(function(){
+		$(".hideDiv").click(function(){
+				$("#previousNationalitiesDiv").hide();
+				$("#noDetailsDiv").show();
+		});
+		$(".showDiv").click(function(){
+				$("#previousNationalitiesDiv").show();
+				$("#noDetailsDiv").hide();
+		});
+	});
+	</script>
+</head>
+<body>
+
+	<header data-includefile="header"></header>
+	<main id="content" role="main">
+		<div data-includefile="banner-alpha"></div>
+
+<!-- DELETE FROM HERE -->
+
+
+	<h1 class="form-title heading-large" data-lang="eng">Do you have your travel details for your departure from the UK?</h1>
+	<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">هل معك معلومات مغادرتك من المملكة المتحدة؟</h1>
+
+
+<div class="form-group">
+		<div id="knowDepartureDetails" class="form-group form-group-compound " data-group-name="knowDepartureDetails">
+				<div class="radio-wrapper">
+						<input id="knowDepartureDetailsYes" name="knowDepartureDetails"  data-button-page="more-than-one-trip.html" data-button-id="#continuebutton" value="Yes" type="radio" class="showDiv" />
+						<label class="block-label" for="knowDepartureDetailsYes">
+								<span data-lang="eng">Yes</span>
+								<span data-lang="arabic" dir="rtl" class="rtl-both">نعم</span>
+						</label>
+				</div>
+				<div class="radio-wrapper">
+						<input id="knowDepartureDetailsNo" name="knowDepartureDetails"  data-button-page="more-than-one-trip.html" data-button-id="#continuebutton" value="No" type="radio" class="hideDiv" />
+						<label class="block-label" for="knowDepartureDetailsNo">
+								<span data-lang="eng">No</span>
+								<span data-lang="arabic" dir="rtl" class="rtl-both">لا</span>
+						</label>
+				</div>
+		</div>
+</div>
+
+<div class="panel-indent more-margin-bottom" id="previousNationalitiesDiv" class="" style="display:none">
+		<div class="split-width clearfix">
+			<label class="form-label" for="previousNationalities" data-lang="eng">Enter the flight number, train number or boat name for your departure from the UK</label>
+			<label class="form-label" for="previousNationalities" data-lang="arabic" dir="rtl">أدخل رقم رحلة الطيران أو القطار أو السفينة التي ستغادر بها المملكة المتحدة</label>
+		</div>
+		<div class="split-width clearfix">
+			<p class="form-hint" data-lang="eng">The details will be on your travel documents</p>
+			<p class="form-hint" dir="rtl" data-lang="arabic">ستكون المعلومات في جدول السفر</p>
+		</div>
+		<input type="text"  id="previousNationalities" name="previousNationalities" class="form-control more-margin-bottom" value="" maxlength="200">
+		<div class="split-width clearfix more-margin">
+		</div>
+		<div class="split-width more-margin clearfix">
+			<label class="form-label" for="previousNationalities" data-lang="eng">What date will you be leaving the UK?</label>
+			<label class="form-label" for="previousNationalities" data-lang="arabic" dir="rtl">ما تاريخ مغادرتك من المملكة المتحدة؟</label>
+		</div>
+
+		<div class="split-width clearfix">
+			<p class="form-hint" data-lang="eng">For example, 30 12 2016</p>
+			<p class="form-hint" data-lang="arabic" dir="rtl" class="rtl-both">
+		مثال، 2016 12 30
+		</p></div>
+
+	<div class="form-group form-date" id="departureDate">
+			<div class="form-group form-group-day">
+					<label for="departureDateDay" data-lang="eng"><span data-lang="eng">Day</span></label>
+					<label for="departureDateDay" data-lang="arabic" dir="rtl" class="rtl-both">ليوم</span></label>
+					<input type="text" class="form-control" id="departureDateDay" name="departureDateDay" aria-required="true" value="" maxlength="2">
+			</div>
+			<div class="form-group form-group-month">
+					<label for="departureDateMonth" data-lang="eng"><span data-lang="eng">Month</span></label>
+					<label for="departureDateMonth" data-lang="arabic" dir="rtl" class="rtl-both">الشهر</span></label>
+					<input type="text" class="form-control" id="departureDateMonth" name="departureDateMonth" aria-required="true" value="" maxlength="2">
+			</div>
+			<div class="form-group form-group-year">
+					<label for="departureDateYear" data-lang="eng"><span data-lang="eng">Year</span></label>
+					<label for="departureDateYear" data-lang="arabic" dir="rtl" class="rtl-both">لسنة</span></label>
+					<input type="text" class="form-control" id="departureDateYear" name="departureDateYear" aria-required="true" value="" maxlength="4">
+			</div>
+	</div>
+
+<div class="split-width clearfix more-margin">
+</div>
+	<div class="split-width clearfix more-margin">
+		<label class="form-label" for="portOfDeparture" data-lang="eng">What airport, train station or port are you leaving the UK from?</label>
+		<label class="form-label" for="portOfDeparture" data-lang="arabic" dir="rtl">من أي مطار او محطة او ميناء ستغادر المملكة المتحدة؟</label>
+	</div>
+				<input type="text" id="portOfDeparture" class="nojs-hidden form-control" name="portOfDeparture" maxlength="95" />
+</div>
+
+<div class="panel-indent" id="noDetailsDiv" style="display:none; margin-bottom: 30px">
+	<div class="split-width clearfix">
+		<label class="form-label" data-lang="eng">How long are you staying in the UK for?</label>
+		<label class="form-label" data-lang="arabic" dir="rtl" class="rtl-both">كم ستظل بالمملكة المتحدة؟</label>
+	</div>
+			<div class="form-group"  data-group-name="ukDuration" style="margin-bottom: 0">
+					<div class="radio-wrapper">
+							<input id="ukDurationOneMonth" name="ukDuration" value="Less than 1 month" type="radio"  />
+							<label class="block-label" for="ukDurationOneMonth">
+									<span data-lang="eng">Less than 1 month</span>
+									<span data-lang="arabic" dir="rtl" class="rtl-both">أقل من شهر</span>
+							</label>
+					</div>
+					<div class="radio-wrapper">
+							<input id="ukDurationOneToThreeMonths" name="ukDuration" value="1 to 3 months" type="radio"  />
+							<label class="block-label" for="ukDurationOneToThreeMonths">
+									<span data-lang="eng">1 to 3 months</span>
+									<span data-lang="arabic" dir="rtl" class="rtl-both">1 الى 3 أشهر</span>
+							</label>
+					</div>
+					<div class="radio-wrapper">
+							<input id="ukDurationThreeToSixMonths" name="ukDuration" value="3 to 6 months" type="radio"  />
+							<label class="block-label" for="ukDurationThreeToSixMonths">
+									<span data-lang="eng">3 to 6 months</span>
+									<span data-lang="arabic" dir="rtl" class="rtl-both">3 الى 6 أشهر</span>
+							</label>
+					</div>
+			</div>
+</div>
+
+	<div class="form-group">
+		<a class="button" href="more-than-one-trip.html" id="continuebutton"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
+	</div>
+
+
+<!-- STOP DELETING! -->
+
+
+	</main>
+	<footer data-includefile="footer"></footer>
+</body>
+</html>

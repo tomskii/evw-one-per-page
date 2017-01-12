@@ -28,20 +28,53 @@
 		<div data-includefile="banner-alpha"></div>
 
 <!-- DELETE FROM HERE -->
-		<h1 class="form-title heading-large" data-lang="eng">What is your passport number?</h1>
-		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">ما رقم جواز سفرك؟</h1>
+		<h1 class="form-title heading-large" data-lang="eng">What is your nationality?</h1>
+		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">ما جنسيتك؟</h1>
 
-		<div class="form-group date-group " data-group-name="passportNumber">
-			<div class="split-width clearfix">
-				<p class="form-hint">Use the number on your passport photo page, include any zeros at the start</p>
-				<p class="form-hint" data-lang="arabic" dir="rtl">أدخله بالضبط كما هو مبين في صفحة المعلومات الشخصية في جواز سفرك بما فيه الأصفار البادئة</p>
-			</div>
-			<div class="split-width clearfix">
-				<input type="text" id="passportNumber" name="passportNumber" minlength="4" maxlength="15" class="form-control" value="" autocomplete="off">
-			</div>
+		<div class="form-group none">
+
+
+
+    <div class="radio-wrapper">
+      <input id="arrive-1" class="radiostyled" name="CountryOfIssue" value="By plane" type="radio">
+      <label class="block-label" for="arrive-1">
+				<span data-lang="eng">Kuwaiti</span>
+	      <span data-lang="arabic" dir="rtl" class="rtl-both">كويتي</span>
+    	</label>
+		</div>
+		<div class="radio-wrapper">
+      <input id="arrive-2" name="CountryOfIssue" value="By train" type="radio">
+			<label class="block-label" for="arrive-2">
+	      <span data-lang="eng">Omani</span>
+	      <span data-lang="arabic" dir="rtl" class="rtl-both">عُماني</span>
+    </label>
+	</div>
+	<div class="radio-wrapper">
+      <input id="arrive-3" name="CountryOfIssue" value="By boat" type="radio">
+			<label class="block-label" for="arrive-3">
+	      <span data-lang="eng">Qatari</span>
+	      <span data-lang="arabic" dir="rtl" class="rtl-both">قطري</span>
+    </label>
+	</div>
+	<div class="radio-wrapper">
+      <input id="arrive-4" name="CountryOfIssue" value="By land from the Republic of Ireland" type="radio">
+			<label class="block-label" for="arrive-4">
+	      <span data-lang="eng">Emirati</span>
+	      <span data-lang="arabic" dir="rtl" class="rtl-both">إماراتي</span>
+    </label>
+	</div>
+	<div class="radio-wrapper">
+			<input id="arrive-5" name="CountryOfIssue" value="Private plane" type="radio">
+			<label class="block-label" for="arrive-5">
+				<span data-lang="eng">Other</span>
+				<span data-lang="arabic" dir="rtl" class="rtl-both">غيره</span>
+		</label>
+</div>
+  </div>
+
 		</div>
 	<div class="form-group">
-		<a class="button" id="continuebutton" href="passport-issued.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
+		<a class="button" id="continuebutton" href="passport-upload.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
 	</div>
 
 

@@ -1,0 +1,92 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>GOV.UK</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+	<!--[if gt IE 8]><!--><link href="/govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<!--[if IE 6]><link href="/govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="/govuk-assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="/govuk-assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<link href="/govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+	<link href="/govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/scripts/form.storage.js"></script>
+	<script type="text/javascript" src="/scripts/application.js"></script>
+	<script type="text/javascript" src="/scripts/details.polyfill.js"></script>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
+</head>
+<body>
+
+	<header data-includefile="header"></header>
+	<main id="content" role="main">
+		<div data-includefile="banner-alpha"></div>
+
+<!-- DELETE FROM HERE -->
+	<h1 class="form-title heading-large" data-lang="eng">Return to your application</h1>
+	<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">أدخل اسمك بالكامل وباللغة الإنجليزية</h1>
+
+<div class="form-group">
+	<div class="split-width clearfix">
+		<label class="form-label" for="passPortNumber" data-lang="eng">Enter your passport number</label>
+		<label class="form-label" for="passPortNumber" data-lang="arabic" dir="rtl">أدخل عنوان بريدك الإلكتروني</label>
+	</div>
+	<div class="split-width clearfix">
+		<input type="text" id="passPortNumber" name="passPortNumber" maxlength="40" class="form-control" value="" autocomplete="off">
+	</div>
+</div>
+	<div class="form-group date-group" data-group-name="dateOfBirth">
+			<fieldset class="inline">
+					<div class="form-date" id="dateOfBirthDiv">
+					<div class="split-width clearfix">
+						<label class="form-label" for="passPortNumber" data-lang="eng">Enter your date of birth</label>
+						<label class="form-label" for="passPortNumber" data-lang="arabic" dir="rtl">أدخل تاريخ ولادتك</label>
+							<p class="form-hint" data-lang="eng">For example, 22 3 1979</p>
+							<p class="form-hint" data-lang="arabic" dir="rtl">على سبيل المثال، 22 3 1979</p>
+						</div>
+							<div class="form-group form-group-day">
+									<label for="dobDay">
+											<span class="visuallyhidden">Day
+											</span>
+											<span data-lang="eng">Day</span>
+											<span data-lang="arabic" dir="rtl" class="rtl-both">اليوم</span>
+									</label>
+									<input type="text" class="form-control" id="dobDay" name="dobDay" aria-required="true" value=""maxlength="2">
+							</div>
+							<div class="form-group form-group-month">
+									<label for="dobMonth">
+											<span class="visuallyhidden">Date of birth </span>
+											<span data-lang="eng">Month</span>
+											<span data-lang="arabic" dir="rtl" class="rtl-both">الشهر</span>
+											<span class="visuallyhidden">expected format MM. Required</span>
+									</label>
+									<input type="text" class="form-control" id="dobMonth" name="dobMonth" aria-required="true" value="" maxlength="2">
+							</div>
+							<div class="form-group form-group-year">
+									<label for="dobYear">
+											<span class="visuallyhidden">Date of birth </span>
+											<span data-lang="eng">Year</span>
+											<span data-lang="arabic" dir="rtl" class="rtl-both">السنة</span>
+											<span class="visuallyhidden">expected format YYYY. Required</span>
+									</label>
+									<input type="text" class="form-control" id="dobYear" name="dobYear" aria-required="true" value="" maxlength="4">
+							</div>
+					</div>
+			</fieldset>
+	</div>
+	<div class="form-group">
+		<a class="button" href="javascript:history.go(-4)"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
+	</div>
+<!-- STOP DELETING! -->
+
+
+	</main>
+	<footer data-includefile="footer"></footer>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>GOV.UK</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+	<!--[if gt IE 8]><!--><link href="/govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<!--[if IE 6]><link href="/govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="/govuk-assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="/govuk-assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<link href="/govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+	<link href="/govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/scripts/form.storage.js"></script>
+	<script type="text/javascript" src="/scripts/application.js"></script>
+	<script type="text/javascript" src="/scripts/details.polyfill.js"></script>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
+	<script>
+	$(document).ready(function(){
+		$(".hideotherReasonForVisitDiv").click(function(){
+				$("#otherReasonForVisitDiv").hide();
+		});
+		$(".showotherReasonForVisitDiv").click(function(){
+				$("#otherReasonForVisitDiv").show();
+		});
+	});
+	</script>
+</head>
+	<body class="js-enabled">
+	<header data-includefile="header"></header>
+	<main id="content" role="main">
+		<div data-includefile="banner-alpha"></div>
+
+<!-- DELETE FROM HERE -->
+
+
+				<h1 class="form-title heading-large" data-lang="eng">What is the main reason for your visit to the UK?</h1>
+				<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">ما سبب زيارتك الرئيسي للمملكة المتحدة؟</h1>
+
+						<div class="form-group" data-group-name="reasonForVisit" id="reasonForVisit">
+								<div class="radio-wrapper">
+										<input id="reasonForVisitBusiness" name="reasonForVisit" value="Business" type="radio" class="hideotherReasonForVisitDiv" />
+										<label class="block-label" for="reasonForVisitBusiness">
+												<span data-lang="eng">Business</span>
+												<span data-lang="arabic" dir="rtl" class="rtl-both">العمل</span>
+										</label>
+								</div>
+								<br />
+								<div class="radio-wrapper">
+										<input id="reasonForVisitTourism" name="reasonForVisit" value="Tourism" type="radio" class="hideotherReasonForVisitDiv" />
+										<label class="block-label" for="reasonForVisitTourism">
+												<span data-lang="eng">Tourism</span>
+												<span data-lang="arabic" dir="rtl" class="rtl-both">إجازة</span>
+										</label>
+								</div>
+								<br />
+								<div class="radio-wrapper">
+										<input id="reasonForVisitStudy" name="reasonForVisit" value="Study" type="radio" class="hideotherReasonForVisitDiv" />
+										<label class="block-label" for="reasonForVisitStudy">
+												<span data-lang="eng">Study</span>
+												<span data-lang="arabic" dir="rtl" class="rtl-both">دراسة</span>
+										</label>
+								</div>
+								<br />
+								<div class="radio-wrapper">
+										<input id="reasonForVisitMedicalCare" name="reasonForVisit" value="Medical" type="radio" class="hideotherReasonForVisitDiv" />
+										<label class="block-label" for="reasonForVisitMedicalCare">
+												<span data-lang="eng">Medical care</span>
+												<span data-lang="arabic" dir="rtl" class="rtl-both">العلاج</span>
+										</label>
+								</div>
+								<br />
+								<div class="radio-wrapper">
+										<input id="reasonForVisitOther" name="reasonForVisit" value="Other" type="radio" class="showotherReasonForVisitDiv" />
+										<label class="block-label" for="reasonForVisitOther">
+												<span data-lang="eng">Other</span>
+												<span data-lang="arabic" dir="rtl" class="rtl-both">غيره</span>
+										</label>
+								</div>
+
+						<div id="otherReasonForVisitDiv" class="panel-indent" data-group-name="otherReasonForVisit" style="display: none">
+
+							<div class="split-text">
+								<label data-lang="eng" class="form-label">You can not use an electronic visa waiver to:</label>
+								<ul class="list-bullet">
+										<li>stay in the UK for more than 6 months</li>
+										<li>work in the UK</li>
+										<li>get married or enter into a civil partnership in the UK</li>
+								</ul>
+							</div>
+							<div class="split-text">
+								<label data-lang="arabic" dir="rtl" class="form-label rtl-both">لا يمكنك ان تستخدم الإعفاء الإلكتروني من التأشيرة لكي:</label>
+								<ul class="list-bullet" data-lang="arabic"  dir="rtl" class="rtl-both">
+										<li>تبقى بالمملكة المتحدة لمدة تتجاوز 6 شهور</li>
+										<li>تعمل بالمملكة المتحدة</li>
+										<li>تتزوج سواء دينيا او مدنيا</li>
+								</ul>
+							</div>
+								<div class="split-width clearfix">
+								<label for="otherReasonForVisit" data-lang="eng" class="form-label">Please enter your reason for travel</label>
+								<label for="otherReasonForVisit" data-lang="arabic" dir="rtl" class="form-label rtl-both">الرجاء إدخال السبب الخاص بك للسفر.</label>
+							</div>
+								<input type="text" id="otherReasonForVisit" name="otherReasonForVisit" class="form-control" value="" maxlength="30">
+						</div>
+
+</div>
+	<div class="form-group">
+		<a class="button" id="continuebutton" href="travelling-with.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
+	</div>
+
+<!-- STOP DELETING! -->
+
+	</main>
+	<footer data-includefile="footer"></footer>
+</body>
+</html>

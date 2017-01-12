@@ -28,22 +28,36 @@
 		<div data-includefile="banner-alpha"></div>
 
 <!-- DELETE FROM HERE -->
-		<h1 class="form-title heading-large" data-lang="eng">What is your passport number?</h1>
-		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">ما رقم جواز سفرك؟</h1>
+		<h1 class="form-title heading-large" data-lang="eng">What is your gender as written in your passport?</h1>
+		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">ما جنسك؟</h1>
 
-		<div class="form-group date-group " data-group-name="passportNumber">
-			<div class="split-width clearfix">
-				<p class="form-hint">Use the number on your passport photo page, include any zeros at the start</p>
-				<p class="form-hint" data-lang="arabic" dir="rtl">أدخله بالضبط كما هو مبين في صفحة المعلومات الشخصية في جواز سفرك بما فيه الأصفار البادئة</p>
-			</div>
-			<div class="split-width clearfix">
-				<input type="text" id="passportNumber" name="passportNumber" minlength="4" maxlength="15" class="form-control" value="" autocomplete="off">
-			</div>
-		</div>
+
+				<fieldset>
+
+						<!--<label for="gender" data-lang="eng">What is your gender?</label>
+						<label for="gender" data-lang="arabic" dir="rtl">ما جنسك؟</label>-->
+						<div class="form-group">
+								<div class="radio-wrapper">
+										<input id="male" name="gender" value="Male" type="radio"  />
+										<label class="block-label" for="male">
+												<span data-lang="eng">Male</span>
+												<span data-lang="arabic" dir="rtl" class="rtl-both">ذكر</span>
+										</label>
+								</div>
+								<div class="radio-wrapper">
+										<input id="female" name="gender" value="Female" type="radio"  />
+										<label class="block-label" for="female">
+												<span data-lang="eng">Female</span>
+												<span data-lang="arabic" dir="rtl" class="rtl-both">أنثى</span>
+										</label>
+								</div>
+						</div>
+				</fieldset>
+
+
 	<div class="form-group">
-		<a class="button" id="continuebutton" href="passport-issued.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
+		<a class="button" id="continuebutton" href="different-names.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
 	</div>
-
 
 <!-- STOP DELETING! -->
 

@@ -22,30 +22,51 @@
 	<script type="text/javascript" src="/scripts/details.polyfill.js"></script>
 	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
 </head>
-	<body class="js-enabled">
+<body>
+
 	<header data-includefile="header"></header>
 	<main id="content" role="main">
 		<div data-includefile="banner-alpha"></div>
 
 <!-- DELETE FROM HERE -->
-		<h1 class="form-title heading-large" data-lang="eng">What is your passport number?</h1>
-		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">ما رقم جواز سفرك؟</h1>
+<div class="form-group">
+	<h1 class="heading-large" data-lang="eng">Your journey to the UK</h1>
+	<h1 class="heading-large" data-lang="arabic" dir="rtl">رحلتك للمملكة المتحدة</h1>
+		<fieldset>
+			<legend data-lang="eng" class="form-label">What date does flight [XX1234] take off from [XXXXXXXXXXXXXXX]?</legend>
+			<label for="arrivalDatePlaneCheck" class="form-label" data-lang="arabic" dir="rtl">[Translate]</label>
 
-		<div class="form-group date-group " data-group-name="passportNumber">
-			<div class="split-width clearfix">
-				<p class="form-hint">Use the number on your passport photo page, include any zeros at the start</p>
-				<p class="form-hint" data-lang="arabic" dir="rtl">أدخله بالضبط كما هو مبين في صفحة المعلومات الشخصية في جواز سفرك بما فيه الأصفار البادئة</p>
+			<div class="form-date">
+				<p data-lang="eng" class="form-hint">For example, 31 03 2016</p>
+                <p data-lang="arabic" dir="rtl" class="form-hint">مثال، 2016 3 3</p>
+				<div class="form-group form-group-day">
+					<label data-lang="eng" for="dob-day">Day</label>
+					<label for="arrivalDatePlaneCheckDay" data-lang="arabic">اليوم</label>
+          <input class="form-control" id="dob-day" type="number" pattern="[0-9]*" maxlength="2" name="dob-day" />
+				</div>
+
+				<div class="form-group form-group-month">
+					<label data-lang="eng" for="dob-month">Month</label>
+					<label for="arrivalDatePlaneCheckMonth" data-lang="arabic">الشهر</label>
+          <input class="form-control" id="dob-month" type="number" pattern="[0-9]*" maxlength="2" name="dob-month" />
+				</div>
+
+				<div class="form-group form-group-year">
+					<label data-lang="eng" for="dob-year">Year</label>
+					<label for="arrivalDatePlaneCheckYear" data-lang="arabic">السنة</label>
+          <input class="form-control" id="dob-year" type="number" pattern="[0-9]*" maxlength="4" name="dob-year" />
+				</div>
 			</div>
-			<div class="split-width clearfix">
-				<input type="text" id="passportNumber" name="passportNumber" minlength="4" maxlength="15" class="form-control" value="" autocomplete="off">
-			</div>
-		</div>
+		</fieldset>
+	</div>
+
 	<div class="form-group">
-		<a class="button" id="continuebutton" href="passport-issued.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
+		<a class="button" href="time-departure.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
 	</div>
 
 
 <!-- STOP DELETING! -->
+
 
 	</main>
 	<footer data-includefile="footer"></footer>

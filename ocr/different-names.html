@@ -21,6 +21,17 @@
 	<script type="text/javascript" src="/scripts/application.js"></script>
 	<script type="text/javascript" src="/scripts/details.polyfill.js"></script>
 	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
+
+	<script>
+	$(document).ready(function(){
+    $(".hideanyOtherNamesDiv").click(function(){
+        $("#anyOtherNamesDiv").hide();
+    });
+    $(".showanyOtherNamesDiv").click(function(){
+        $("#anyOtherNamesDiv").show();
+    });
+});
+</script>
 </head>
 	<body class="js-enabled">
 	<header data-includefile="header"></header>
@@ -28,22 +39,38 @@
 		<div data-includefile="banner-alpha"></div>
 
 <!-- DELETE FROM HERE -->
-		<h1 class="form-title heading-large" data-lang="eng">What is your passport number?</h1>
-		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">ما رقم جواز سفرك؟</h1>
+		<h1 class="form-title heading-large" data-lang="eng">Have you ever been known by a different name?</h1>
+		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">هل كنت معروفا بأسم مختلف؟</h1>
 
-		<div class="form-group date-group " data-group-name="passportNumber">
-			<div class="split-width clearfix">
-				<p class="form-hint">Use the number on your passport photo page, include any zeros at the start</p>
-				<p class="form-hint" data-lang="arabic" dir="rtl">أدخله بالضبط كما هو مبين في صفحة المعلومات الشخصية في جواز سفرك بما فيه الأصفار البادئة</p>
-			</div>
-			<div class="split-width clearfix">
-				<input type="text" id="passportNumber" name="passportNumber" minlength="4" maxlength="15" class="form-control" value="" autocomplete="off">
-			</div>
+		<div class="form-group">
+				<div class="form-group form-group-compound " id="knownByOtherName" data-group-name="knownByOtherName">
+						<div class="radio-wrapper">
+								<input id="knownByOtherNameYes" name="knownByOtherName" value="Yes" type="radio" class="showanyOtherNamesDiv" />
+								<label class="block-label" for="knownByOtherNameYes">
+										<span data-lang="eng">Yes</span>
+										<span data-lang="arabic" dir="rtl" class="rtl-both">نعم</span>
+								</label>
+						</div>
+						<div class="radio-wrapper">
+								<input id="knownByOtherNameNo" name="knownByOtherName" value="No" type="radio" class="hideanyOtherNamesDiv"  />
+								<label class="block-label" for="knownByOtherNameNo">
+										<span data-lang="eng">No</span>
+										<span data-lang="arabic" dir="rtl" class="rtl-both">لا</span>
+								</label>
+						</div>
+				</div>
+				<div class="panel-indent" data-group-name="anyOtherNames" id="anyOtherNamesDiv" style="display: none">
+					<div class="split-width clearfix">
+						<label class="form-label" for="anyOtherNames" data-lang="eng">Enter your previous names</label>
+						<label class="form-label" for="anyOtherNames" dir="rtl" data-lang="arabic">أدخل أي أسماء أخرى كنت معروفا بها.</label>
+					</div>
+						<textarea type="text" id="anyOtherNames" name="anyOtherNames" class="form-control smallertextarea" value="" maxlength="600"></textarea>
+				</div>
 		</div>
-	<div class="form-group">
-		<a class="button" id="continuebutton" href="passport-issued.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
-	</div>
 
+	<div class="form-group">
+		<a class="button" id="continuebutton" href="your-nationality.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
+	</div>
 
 <!-- STOP DELETING! -->
 

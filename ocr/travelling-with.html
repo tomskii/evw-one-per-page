@@ -21,31 +21,60 @@
 	<script type="text/javascript" src="/scripts/application.js"></script>
 	<script type="text/javascript" src="/scripts/details.polyfill.js"></script>
 	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
+	<script>
+	$(document).ready(function(){
+		$(".hideotherTravellersDiv").click(function(){
+				$("#otherTravellersDiv").hide();
+		});
+		$(".showotherTravellersDiv").click(function(){
+				$("#otherTravellersDiv").show();
+		});
+	});
+	</script>
 </head>
-	<body class="js-enabled">
+<body>
+
 	<header data-includefile="header"></header>
 	<main id="content" role="main">
 		<div data-includefile="banner-alpha"></div>
 
 <!-- DELETE FROM HERE -->
-		<h1 class="form-title heading-large" data-lang="eng">What is your passport number?</h1>
-		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">ما رقم جواز سفرك؟</h1>
+<div class="form-group">
+	<h1 class="form-title heading-large" data-lang="eng">Are you travelling to the UK with anyone else?</h1>
+	<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">هل تسافر للمملكة المتحدة مع أحد؟</h1>
 
-		<div class="form-group date-group " data-group-name="passportNumber">
-			<div class="split-width clearfix">
-				<p class="form-hint">Use the number on your passport photo page, include any zeros at the start</p>
-				<p class="form-hint" data-lang="arabic" dir="rtl">أدخله بالضبط كما هو مبين في صفحة المعلومات الشخصية في جواز سفرك بما فيه الأصفار البادئة</p>
+	<div>
+			<div id="travelWithOthers" class="form-group form-group-compound " data-group-name="travelWithOthers">
+					<div class="radio-wrapper">
+							<input id="travelWithOthersYes" name="travelWithOthers" value="Yes" type="radio"  class="showotherTravellersDiv" />
+							<label class="block-label" for="travelWithOthersYes">
+									<span data-lang="eng">Yes</span>
+									<span data-lang="arabic" dir="rtl" class="rtl-both">نعم</span>
+							</label>
+					</div>
+					<div class="radio-wrapper">
+							<input id="travelWithOthersNo" name="travelWithOthers" value="No" type="radio"  class="hideotherTravellersDiv" />
+							<label class="block-label" for="travelWithOthersNo">
+									<span data-lang="eng">No</span>
+									<span data-lang="arabic" dir="rtl" class="rtl-both">لا</span>
+							</label>
+					</div>
 			</div>
-			<div class="split-width clearfix">
-				<input type="text" id="passportNumber" name="passportNumber" minlength="4" maxlength="15" class="form-control" value="" autocomplete="off">
-			</div>
-		</div>
+	</div>
+	<div id="otherTravellersDiv" class="panel-indent" data-group-name="otherTravellers" style="display: none">
+		<label class="form-label" for="otherTravellers" data-lang="eng">Give the name of each person travelling with you. Each person must submit a separate electronic visa waiver form.</label>
+			<label for="otherTravellers" data-lang="arabic" dir="rtl" class="form-label rtl-both">أدخل اسم كل شخص يسافر معك. يجب على كل شخص أن يقدم طلبا منفصلا للحصول على الإعفاء الإلكتروني من التأشيرة.</label>
+			<textarea id="otherTravellers" name="otherTravellers" class="form-control" maxlength="200"></textarea>
+	</div>
+	</div>
+
 	<div class="form-group">
-		<a class="button" id="continuebutton" href="passport-issued.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
+		<a class="button" href="uk-address.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
 	</div>
 
 
 <!-- STOP DELETING! -->
+
 
 	</main>
 	<footer data-includefile="footer"></footer>

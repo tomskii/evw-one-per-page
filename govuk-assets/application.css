@@ -1020,8 +1020,15 @@ ul, ol {
   padding: 10px 0 10px 15px;
   margin: 30px 0 10px 0; }
 
-  .panel-indent.flightnumber {
+.panel-indent.freetext {
+  border-left: 10px solid #bfc1c3;
+}
+
+.panel-indent.flightnumber {
     margin: 15px 0 30px 0; }
+
+.panel-indent.savecomplete {
+    margin: 0 0 30px 0; }
 
 .panel-indent legend {
   margin-top: 0; }
@@ -1037,39 +1044,21 @@ ul, ol {
   padding: 10px 0 10px 15px;
   margin: 30px 0 45px 0; }
 
-.split-width .panel-indent {
-  position: relative;
-  width: 45%;
-  clear: none;
-float: left}
-
-  .split-width .panel-indent[dir="rtl"] {
-    position: relative;
-    width: 45%;
-    clear: none;
-  float: right}
-
-
-
-  @media (max-width: 640px) {
-  .split-width .panel-indent {
-    position: relative;
-    width: 90%;
+@media (min-width: 641px) {
+.split-width .panel-indent {position: relative; width: 40%; clear: none; float: left}
+.split-width .panel-indent[dir="rtl"] {position: relative; width: 40%; clear: none; float: right}
 }
-    .split-width .panel-indent[dir="rtl"] {
-      position: relative;
-      width: 90%;}
-      .panel-indent.flightnumber {
-    margin: 0;}
-    .panel-indent.flightnumber {
-  margin: 0;
+@media (min-width: 725px) {
+.split-width .panel-indent {position: relative; width: 45%; clear: none; float: left}
+.split-width .panel-indent[dir="rtl"] {position: relative; width: 45%; clear: none; float: right}
 }
-.panel-indent.flightnumber[dir="rtl"] {
-margin: 0;
+@media (max-width: 640px) {
+  .split-width .panel-indent {position: relative; width: 90%;}
+  .split-width .panel-indent[dir="rtl"] {position: relative; width: 90%;}
+  .panel-indent.flightnumber {margin: 0;}
+  .panel-indent.flightnumber {margin: 0;}
+  .panel-indent.flightnumber[dir="rtl"] {margin: 0;}
 }
-}
-
-
 
 .column-half[dir="rtl"] .panel-indent, .column-two-thirds[dir="rtl"] .panel-indent {
     border-right: 10px solid #bfc1c3;
@@ -1481,6 +1470,10 @@ h2.heading-medium.less-space {margin: 1em 0 0.5em 0}
   border-right: 4px solid #bfc1c3;
   padding: 10px 15px 10px 15px;
 /*margin: 30px 0 45px 0; */}
+
+.panel-indent.freetext[dir="rtl"] {
+  border-right: 10px solid #bfc1c3;
+}
 
   @media (min-width: 641px) {
   .column-half {
@@ -2192,3 +2185,10 @@ summary span[dir="rtl"] {float: right}
 .heading-medium.error-summary-heading {width: 50%; float: left; margin-bottom: 10px}
 .heading-medium.error-summary-heading, .error-summary-list {width: 50%; float: left}
 .error-message[dir="rtl"], .error-summary-list[dir="rtl"] {float: right; font-size: 120%}
+
+.fullwidthLinks, .fullwidthText {width: 50%; float: left}
+.fullwidthLinks[dir="rtl"], .fullwidthText[dir="rtl"] {float: right}
+
+@media (max-width: 440px){
+.fullwidthLinks, .fullwidthText {width: 100%; clear: both}
+}

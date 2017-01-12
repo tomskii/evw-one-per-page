@@ -28,20 +28,21 @@
 		<div data-includefile="banner-alpha"></div>
 
 <!-- DELETE FROM HERE -->
-		<h1 class="form-title heading-large" data-lang="eng">What is your passport number?</h1>
-		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">ما رقم جواز سفرك؟</h1>
+		<h1 class="form-title heading-large" data-lang="eng">Where was your passport issued?</h1>
+		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">أين تم إصدار جواز سفرك؟</h1>
 
-		<div class="form-group date-group " data-group-name="passportNumber">
+		<div class="form-group date-group " data-group-name="placeOfIssue">
+
 			<div class="split-width clearfix">
-				<p class="form-hint">Use the number on your passport photo page, include any zeros at the start</p>
-				<p class="form-hint" data-lang="arabic" dir="rtl">أدخله بالضبط كما هو مبين في صفحة المعلومات الشخصية في جواز سفرك بما فيه الأصفار البادئة</p>
+				<label class="form-hint" data-lang="eng" for="placeOfIssue">Enter it exactly as it is written in your passport</label>
+				<label class="form-hint rtl-both" for="placeOfIssue" data-lang="arabic" dir="rtl">أدخل المعلومات بالضبط كما هي مكتوبة في جواز سفرك</label>
 			</div>
 			<div class="split-width clearfix">
-				<input type="text" id="passportNumber" name="passportNumber" minlength="4" maxlength="15" class="form-control" value="" autocomplete="off">
+				<input type="text" id="placeOfIssue" name="placeOfIssue" class="form-control" value="" maxlength="50" autocomplete="off">
 			</div>
 		</div>
 	<div class="form-group">
-		<a class="button" id="continuebutton" href="passport-issued.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
+		<a class="button" id="continuebutton" href="passport-birth.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
 	</div>
 
 

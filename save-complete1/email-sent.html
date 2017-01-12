@@ -22,30 +22,37 @@
 	<script type="text/javascript" src="/scripts/details.polyfill.js"></script>
 	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
 </head>
-	<body class="js-enabled">
+<body>
+
 	<header data-includefile="header"></header>
 	<main id="content" role="main">
 		<div data-includefile="banner-alpha"></div>
 
 <!-- DELETE FROM HERE -->
-		<h1 class="form-title heading-large" data-lang="eng">What is your passport number?</h1>
-		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">ما رقم جواز سفرك؟</h1>
+<div class="playback-container" name="save-form">
+	<h1 class="form-title heading-large" data-lang="eng">Email sent</h1>
+	<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">أرسل البريد الإلكتروني</h1>
 
-		<div class="form-group date-group " data-group-name="passportNumber">
-			<div class="split-width clearfix">
-				<p class="form-hint">Use the number on your passport photo page, include any zeros at the start</p>
-				<p class="form-hint" data-lang="arabic" dir="rtl">أدخله بالضبط كما هو مبين في صفحة المعلومات الشخصية في جواز سفرك بما فيه الأصفار البادئة</p>
-			</div>
-			<div class="split-width clearfix">
-				<input type="text" id="passportNumber" name="passportNumber" minlength="4" maxlength="15" class="form-control" value="" autocomplete="off">
-			</div>
-		</div>
-	<div class="form-group">
-		<a class="button" id="continuebutton" href="passport-issued.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
+<div class="form-group">
+	<div class="split-width clearfix">
+		<p data-lang="eng" class="fullwidthText">The link to your application has been sent to <span class="playback-cell" data-playback="emailAddress"></span></p>
+		<p data-lang="arabic" dir="rtl" class="fullwidthText">تم إرسال رابط إلى التطبيق الخاص بك ل <span class="playback-cell" data-playback="emailAddress"></span></p>
 	</div>
 
 
+<div class="split-width clearfix">
+			<p class="panel-indent savecomplete freetext" data-lang="eng">We will save your application for 10 days. After 10 days we will delete it so we can protect your data.</p>
+			<p class="panel-indent savecomplete freetext" data-lang="arabic" dir="rtl">نحن سيوفر التطبيق الخاص بك لمدة 10 يوما. بعد 10 يوما سنحذفها حتى نتمكن من حماية البيانات الخاصة بك.</p>
+</div>
+
+	<div class="split-width clearfix">
+		<span class="fullwidthLinks" data-lang="eng"><a href="javascript:history.go(-2)">Return to your application</a></span>
+		<span class="fullwidthLinks" data-lang="arabic" dir="rtl"><a href="javascript:history.go(-2)">العودة إلى التطبيق الخاص بك</a></span>
+	</div>
+	</div>
+</div>
 <!-- STOP DELETING! -->
+
 
 	</main>
 	<footer data-includefile="footer"></footer>
