@@ -2204,7 +2204,7 @@ summary span[dir="rtl"] {float: right}
 .error-message[dir="rtl"], .error-summary-list[dir="rtl"] {float: right; font-size: 120%}
 
 .fullwidthLinks, .fullwidthText {width: 50%; float: left}
-.fullwidthLinks[dir="rtl"], .fullwidthText[dir="rtl"] {float: right}
+.fullwidthLinks[dir="rtl"], .fullwidthText[dir="rtl"] {float: right; font-size: 21px}
 
 @media (max-width: 440px){
 .fullwidthLinks, .fullwidthText {width: 100%; clear: both}
