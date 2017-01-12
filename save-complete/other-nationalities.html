@@ -1,0 +1,141 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>GOV.UK</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+	<!--[if gt IE 8]><!--><link href="/govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<!--[if IE 6]><link href="/govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="/govuk-assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="/govuk-assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<link href="/govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+	<link href="/govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/scripts/form.storage.js"></script>
+	<script type="text/javascript" src="/scripts/application.js"></script>
+	<script type="text/javascript" src="/scripts/details.polyfill.js"></script>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
+
+	<script>
+	$(document).ready(function(){
+    $(".hideotherNationalitiesDiv").click(function(){
+        $("#otherNationalitiesDiv").hide();
+    });
+    $(".showotherNationalitiesDiv").click(function(){
+        $("#otherNationalitiesDiv").show();
+    });
+		$(".hidepreviousNationalitiesDiv").click(function(){
+        $("#previousNationalitiesDiv").hide();
+    });
+    $(".showpreviousNationalitiesDiv").click(function(){
+        $("#previousNationalitiesDiv").show();
+    });
+});
+</script>
+
+</head>
+	<body class="js-enabled">
+	<header data-includefile="header"></header>
+	<main id="content" role="main">
+		<div data-includefile="banner-alpha"></div>
+
+<!-- DELETE FROM HERE -->
+		<h1 class="form-title heading-large" data-lang="eng">Other nationalities</h1>
+		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">جنسياتك الأخرى</h1>
+
+		<div class="form-group more-margin">
+				<header class="page-header-sub">
+						<h2 class="section-status"><span class="visuallyhidden">Other nationalities</span></h2>
+				</header>
+				<!--<h1 class="heading-large" data-lang="eng">Other nationalities</h1>
+				<h1 class="heading-large" data-lang="arabic" dir="rtl">جنسياتك الأخرى</h1>-->
+						<fieldset>
+								<div class="split-width clearfix">
+									<label class="bold-small" for="holdOtherNationalities" data-lang="eng">Do you currently have any other nationalities?</label>
+								<label class="bold-small" for="holdOtherNationalities" data-lang="arabic" dir="rtl">هل تحمل أي جنسيات أخرى؟</label>
+							</div>
+
+								<div id="holdOtherNationalities" class="form-group form-group-compound " data-group-name="holdOtherNationalities">
+										<div class="radio-wrapper">
+												<input id="holdOtherNationalitiesYes" name="holdOtherNationalities" value="Yes" type="radio" class="showotherNationalitiesDiv" />
+												<label class="block-label" for="holdOtherNationalitiesYes">
+														<span data-lang="eng">Yes</span>
+														<span data-lang="arabic" dir="rtl" class="rtl-both">نعم</span>
+												</label>
+										</div>
+										<div class="radio-wrapper">
+												<input id="holdOtherNationalitiesNo" name="holdOtherNationalities" value="No" type="radio" class="hideotherNationalitiesDiv" />
+												<label class="block-label" for="holdOtherNationalitiesNo">
+														<span data-lang="eng">No</span>
+														<span data-lang="arabic" dir="rtl" class="rtl-both">لا</span>
+												</label>
+										</div>
+								</div>
+								<div class="panel-indent " data-group-name="otherNationalities" id="otherNationalitiesDiv" style="display: none">
+									<div class="split-width clearfix">
+										<label class="bold-small" for="otherNationalities" data-lang="eng">Enter the other nationalities that you hold.</label>
+										<label class="bold-small" for="otherNationalities" data-lang="arabic" dir="rtl">أدخل الجنسيات الأخرى التي تحملها.</label>
+										</div>
+										<div class="split-width clearfix">
+										<p class="form-hint" data-lang="eng">For example, ‘Canadian, Italian’</p>
+										<p class="form-hint" data-lang="arabic" dir="rtl">على سبيل المثال، الكندية أو الإيطالية</p>
+									</div>
+										<input type="text" id="otherNationalities" name="otherNationalities" class="form-control" value="" maxlength="100">
+
+								</div>
+						</fieldset><br>
+						<fieldset>
+							<div class="split-width clearfix">
+								<label class="bold-small" for="heldPreviousNationalities" data-lang="eng">Have you had any other nationalities in the past?</label>
+								<label class="bold-small" for="heldPreviousNationalities" data-lang="arabic" dir="rtl">هل حملت أي جنسيات أخرى سابقا؟</label>
+							</div>
+								<div class="form-group form-group-compound " data-group-name="heldPreviousNationalities" id="heldPreviousNationalities">
+										<div class="radio-wrapper">
+												<input id="heldPreviousNationalitiesYes" name="heldPreviousNationalities" value="Yes" type="radio" class="showpreviousNationalitiesDiv" />
+												<label class="block-label" for="heldPreviousNationalitiesYes">
+														<span data-lang="eng">Yes</span>
+														<span data-lang="arabic" dir="rtl" class="rtl-both">نعم</span>
+												</label>
+										</div>
+										<div class="radio-wrapper">
+												<input id="heldPreviousNationalitiesNo" name="heldPreviousNationalities" value="No" type="radio" class="hidepreviousNationalitiesDiv" />
+												<label class="block-label" for="heldPreviousNationalitiesNo">
+														<span data-lang="eng">No</span>
+														<span data-lang="arabic" dir="rtl" class="rtl-both">لا</span>
+												</label>
+										</div>
+								</div>
+
+								<div class="panel-indent " data-group-name="previousNationalities" id="previousNationalitiesDiv" style="display: none">
+										<div class="split-width clearfix">
+											<label class="bold-small" for="previousNationalities" data-lang="eng">Enter all the nationalities you had previously.</label>
+										<label class="bold-small" for="previousNationalities" data-lang="arabic" dir="rtl">أدخل كل الجنسيات التي حملتها سابقا،</label>
+									</div>
+									<div class="split-width clearfix">
+										<p class="form-hint" data-lang="eng">For example, ‘British’</p>
+										<p class="form-hint" dir="rtl" data-lang="arabic">مثلا، بريطانية</p>
+									</div>
+										<input type="text"  id="previousNationalities" name="previousNationalities" class="form-control" value="" maxlength="100">
+								</div>
+						</fieldset>
+		</div>
+
+	<div class="form-group">
+		<a class="button" id="continuebutton" href="arrival.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
+	</div>
+	<div class="split-width clearfix">
+		<span class="fullwidthLinks" data-lang="eng"><a href="save-and-complete.html">Save and complete later</a></span>
+		<span class="fullwidthLinks" data-lang="arabic" dir="rtl"><a href="save-and-complete.html">العودة إلى التطبيق الخاص بك</a></span>
+	</div>
+<!-- STOP DELETING! -->
+
+	</main>
+	<footer data-includefile="footer"></footer>
+</body>
+</html>

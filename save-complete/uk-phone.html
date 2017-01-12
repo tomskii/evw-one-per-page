@@ -22,61 +22,31 @@
 	<script type="text/javascript" src="/scripts/details.polyfill.js"></script>
 	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
 </head>
-	<body class="js-enabled">
+<body>
+
 	<header data-includefile="header"></header>
 	<main id="content" role="main">
 		<div data-includefile="banner-alpha"></div>
 
 <!-- DELETE FROM HERE -->
-		<h1 class="form-title heading-large" data-lang="eng">What is your nationality?</h1>
-		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">ما جنسيتك؟</h1>
 
-		<div class="form-group none">
+	<h1 class="form-title heading-large" data-lang="eng">What is your contact phone number in the UK?</h1>
+	<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">ما رقم التواصل معك في المملكة المتحدة؟</h1>
 
-
-
-    <div class="radio-wrapper">
-      <input id="arrive-1" class="radiostyled" name="CountryOfIssue" value="By plane" type="radio">
-      <label class="block-label" for="arrive-1">
-				<span data-lang="eng">Kuwaiti</span>
-	      <span data-lang="arabic" dir="rtl" class="rtl-both">كويتي</span>
-    	</label>
-		</div>
-		<div class="radio-wrapper">
-      <input id="arrive-2" name="CountryOfIssue" value="By train" type="radio">
-			<label class="block-label" for="arrive-2">
-	      <span data-lang="eng">Omani</span>
-	      <span data-lang="arabic" dir="rtl" class="rtl-both">عُماني</span>
-    </label>
+	<div class="form-group" data-group-name="ukVisitPhoneNumber">
+			<input type="text" id="ukVisitPhoneNumber" name="ukVisitPhoneNumber" value="" class="form-control" minlength="11" maxlength="40" autocomplete="off" />
 	</div>
-	<div class="radio-wrapper">
-      <input id="arrive-3" name="CountryOfIssue" value="By boat" type="radio">
-			<label class="block-label" for="arrive-3">
-	      <span data-lang="eng">Qatari</span>
-	      <span data-lang="arabic" dir="rtl" class="rtl-both">قطري</span>
-    </label>
-	</div>
-	<div class="radio-wrapper">
-      <input id="arrive-4" name="CountryOfIssue" value="By land from the Republic of Ireland" type="radio">
-			<label class="block-label" for="arrive-4">
-	      <span data-lang="eng">Emirati</span>
-	      <span data-lang="arabic" dir="rtl" class="rtl-both">إماراتي</span>
-    </label>
-	</div>
-	<div class="radio-wrapper">
-			<input id="arrive-5" name="CountryOfIssue" value="Private plane" type="radio">
-			<label class="block-label" for="arrive-5">
-				<span data-lang="eng">Other</span>
-				<span data-lang="arabic" dir="rtl" class="rtl-both">غيره</span>
-		</label>
-</div>
-  </div>
+
 	<div class="form-group">
-		<a class="button" id="continuebutton" href="passport-upload.html"><span data-lang="eng">Continue</span>&nbsp;&nbsp;<span data-lang="arabic" dir="rtl" >استمر</span></a>
+		<a class="button" href="travel-details-departure.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
 	</div>
-
+	<div class="split-width clearfix">
+		<span class="fullwidthLinks" data-lang="eng"><a href="save-and-complete.html">Save and complete later</a></span>
+		<span class="fullwidthLinks" data-lang="arabic" dir="rtl"><a href="save-and-complete.html">العودة إلى التطبيق الخاص بك</a></span>
+	</div>
 
 <!-- STOP DELETING! -->
+
 
 	</main>
 	<footer data-includefile="footer"></footer>

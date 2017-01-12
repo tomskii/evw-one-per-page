@@ -1,0 +1,115 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>GOV.UK</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+	<!--[if gt IE 8]><!--><link href="/govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<!--[if IE 6]><link href="/govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="/govuk-assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="/govuk-assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<link href="/govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+	<link href="/govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/scripts/form.storage.js"></script>
+	<script type="text/javascript" src="/scripts/application.js"></script>
+	<script type="text/javascript" src="/scripts/details.polyfill.js"></script>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
+	<script>
+	$(document).ready(function(){
+		$(".hideOtherEmailDiv").click(function(){
+				$("#otherEmailDiv").hide();
+		});
+		$(".showOtherEmailDiv").click(function(){
+				$("#otherEmailDiv").show();
+		});
+	});
+	</script>
+</head>
+<body>
+
+	<header data-includefile="header"></header>
+	<main id="content" role="main">
+		<div data-includefile="banner-alpha"></div>
+
+<!-- DELETE FROM HERE -->
+
+	<h1 class="form-title heading-large" data-lang="eng">Your email</h1>
+	<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">بريدك الإلكتروني</h1>
+
+<div class="form-group " data-group-name="emailAddress">
+	<div class="split-width clearfix">
+		<label class="form-label" for="emailAddress" data-lang="eng">What email address do you want this EVW sent to?</label>
+		<label class="form-label" for="emailAddress" data-lang="arabic" dir="rtl">لأي بريد إلكتروني تريد أن نرسل الإعفاء الإلكتروني من التأشيرة هذا؟	</label>
+	</div>
+		<input type="text" id="emailAddress" name="emailAddress" value="" class="form-control" maxlength="127">
+</div>
+<div class="form-group " data-group-name="emailAddress">
+	<div class="split-width clearfix">
+		<label class="form-hint" for="confirmemailAddress" data-lang="eng">Confirm this email address</label>
+		<label class="form-hint" for="confirmemailAddress" data-lang="arabic" dir="rtl">أكد عنوان البريد الإلكتروني	</label>
+	</div>
+		<input type="text" id="confirmemailAddress" name="confirmemailAddress" value="" class="form-control" maxlength="127">
+</div>
+<div class="form-group">
+	<hr class="hrdivstyle">
+</div>
+<div class="form-group">
+		<div class="split-width clearfix">
+			<label class="form-label" for="emailAddress">Do you want to send a copy to another email address?</label>
+			<label class="form-label" for="emailAddress" data-lang="arabic" dir="rtl">هل تريد أن ترسل نسخة لبريد إلكتروني آخر؟</label>
+		</div>
+		<div class="radio-wrapper">
+				<input id="yes" name="emailOther" value="yes" type="radio" class="showOtherEmailDiv" />
+				<label class="block-label" for="yes">
+						<span data-lang="eng">Yes</span>
+						<span data-lang="arabic" dir="rtl" class="rtl-both">نعم</span>
+				</label>
+		</div>
+		<div class="radio-wrapper">
+				<input id="no" name="emailOther" value="no" type="radio" class="hideOtherEmailDiv" />
+				<label class="block-label" for="no">
+						<span data-lang="eng">No</span>
+						<span data-lang="arabic" dir="rtl" class="rtl-both">لا</span>
+				</label>
+		</div>
+</div>
+
+<div id="otherEmailDiv" class="panel-indent emailsindent" style="display: none">
+	<div class="form-group " data-group-name="emailAddress">
+		<div class="split-width clearfix">
+			<label class="form-label" for="otheremailAddress" data-lang="eng">Enter your other email address</label>
+			<label class="form-label" for="otheremailAddress" data-lang="arabic" dir="rtl">أدخل عنوان البريد الإلكتروني الآخر	</label>
+		</div>
+			<input type="text" id="otheremailAddress" name="emailAddress" value="" class="form-control" maxlength="127">
+	</div>
+	<div class="form-group" data-group-name="emailAddress">
+		<div class="split-width clearfix">
+			<label class="form-hint" for="confirmotheremailAddress" data-lang="eng">Confirm your other email address</label>
+			<label class="form-hint" for="confirmotheremailAddress" data-lang="arabic" dir="rtl">أكد عنوان بريدك الإلكتروني الآخر	</label>
+		</div>
+			<input type="text" id="confirmotheremailAddress" name="confirmotheremailAddress" value="" class="form-control" maxlength="127">
+	</div>
+</div>
+
+
+	<div class="form-group">
+		<a class="button" href="employed.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
+	</div>
+	<div class="split-width clearfix">
+		<span class="fullwidthLinks" data-lang="eng"><a href="save-and-complete.html">Save and complete later</a></span>
+		<span class="fullwidthLinks" data-lang="arabic" dir="rtl"><a href="save-and-complete.html">العودة إلى التطبيق الخاص بك</a></span>
+	</div>
+<!-- STOP DELETING! -->
+
+
+	</main>
+	<footer data-includefile="footer"></footer>
+</body>
+</html>

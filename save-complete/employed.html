@@ -1,0 +1,94 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>GOV.UK</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+	<!--[if gt IE 8]><!--><link href="/govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<!--[if IE 6]><link href="/govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="/govuk-assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="/govuk-assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<link href="/govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+	<link href="/govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/scripts/form.storage.js"></script>
+	<script type="text/javascript" src="/scripts/application.js"></script>
+	<script type="text/javascript" src="/scripts/details.polyfill.js"></script>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
+	<script>
+	$(document).ready(function(){
+		$(".hideemployedDiv").click(function(){
+				$("#employedDiv").hide();
+		});
+		$(".showemployedDiv").click(function(){
+				$("#employedDiv").show();
+		});
+	});
+	</script>
+</head>
+<body>
+
+	<header data-includefile="header"></header>
+	<main id="content" role="main">
+		<div data-includefile="banner-alpha"></div>
+
+<!-- DELETE FROM HERE -->
+<div class="form-group">
+	<h1 class="form-title heading-large" data-lang="eng">Are you employed?</h1>
+	<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">هل أنت موظف؟</h1>
+
+
+		<fieldset id="areYouEmployed">
+				<div class="radio-wrapper">
+						<input id="areYouEmployedYes" name="areYouEmployed" value="Yes" type="radio" class="showemployedDiv" />
+						<label class="block-label" for="areYouEmployedYes">
+								<span data-lang="eng">Yes</span>
+								<span data-lang="arabic" dir="rtl" class="rtl-both">نعم</span>
+						</label>
+				</div>
+				<div class="radio-wrapper">
+						<input id="areYouEmployedNo" name="areYouEmployed" value="No" type="radio"  class="hideemployedDiv" />
+						<label class="block-label" for="areYouEmployedNo">
+								<span data-lang="eng">No</span>
+								<span data-lang="arabic" dir="rtl" class="rtl-both">لا</span>
+						</label>
+				</div>
+		</fieldset>
+
+
+<div id="employedDiv" class="panel-indent" style="display: none">
+		<div data-group-name="companyName">
+				<div class="split-width clearfix">
+				<label for="companyName" class="form-label" data-lang="eng">What is the name of the company or organisation you work for?</label>
+				<label for="companyName" class="form-label" data-lang="arabic" dir="rtl">ما اسم الشركة او المنظمة التي تعمل بها؟</label></div>
+				<input type="text" id="companyName" name="companyName" class="form-control" value="" maxlength="60">
+		</div><br>
+		<div data-group-name="occupation">
+					<div class="split-width clearfix">
+						<label for="occupation" class="form-label" data-lang="eng">What is your job title?</label>
+				<label for="occupation" class="form-label" data-lang="arabic" dir="rtl">ما لقب وظيفتك؟</label>
+			</div>
+				<input type="text" id="occupation" name="occupation" class="form-control" value="" maxlength="100">
+		</div>
+</div>
+</div>
+	<div class="form-group">
+		<a class="button" href="someone-else.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
+	</div>
+	<div class="split-width clearfix">
+		<span class="fullwidthLinks" data-lang="eng"><a href="save-and-complete.html">Save and complete later</a></span>
+		<span class="fullwidthLinks" data-lang="arabic" dir="rtl"><a href="save-and-complete.html">العودة إلى التطبيق الخاص بك</a></span>
+	</div>
+<!-- STOP DELETING! -->
+
+
+	</main>
+	<footer data-includefile="footer"></footer>
+</body>
+</html>

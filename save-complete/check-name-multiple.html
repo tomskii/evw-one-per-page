@@ -52,11 +52,23 @@
 <h1 class="form-title heading-large" data-lang="arabic" dir="rtl">قارن اسمك مع جواز سفرك</h1>
 
 <div class="form-group less-bottom2">
-<div class="playback-container" name="singlename">
+<div class="playback-container" name="omani-name">
 <div class="split-width clearfix">
 			 <div class="flight-details-container omani-container" id="recheckYourName">
            <div class="flight-details-row">
-               <div class="playback-cell omaniNamePlay" data-playback="singlename"></div>
+               <div class="label-cell" data-lang="eng"><span class="nameCheckLabel">Surname</span></div>
+               <div class="playback-cell omaniNamePlay" data-playback="surname"></div>
+               <div class="label-cell" data-lang="arabic" dir="rtl" class="rtl-both"><span class="nameCheckLabel">اللقب</span></div>
+           </div>
+           <div class="flight-details-row">
+               <div class="label-cell" data-lang="eng"><span class="nameCheckLabel">Given names</span></div>
+               <div class="playback-cell omaniNamePlay" data-playback="givenname"></div>
+               <div class="label-cell" data-lang="arabic" dir="rtl" class="rtl-both"><span class="nameCheckLabel">الاسم الأول</span></div>
+           </div>
+           <div class="flight-details-row">
+               <div class="label-cell" data-lang="eng"><span class="nameCheckLabel">Family name</span></div>
+               <div class="playback-cell omaniNamePlay" data-playback="familyname"></div>
+               <div class="label-cell" data-lang="arabic" dir="rtl" class="rtl-both"><span class="nameCheckLabel">اسم العائلة</span></div>
            </div>
        </div>
 		 </div>
@@ -85,14 +97,14 @@
 				 <div class="form-group nameChecking" data-group-name="nameCheck">
            <fieldset>
                <div class="radio-wrapper">
-                   <input id="nameCheckYes" name="nameCheck" data-button-page="passport-number.html" data-button-id="#continuebutton" value="Yes" type="radio">
+                   <input id="nameCheckYes" name="nameCheck" data-button-page="passport-issued.html" data-button-id="#continuebutton" value="Yes" type="radio">
                        <label class="block-label" for="nameCheckYes">
 												 <span data-lang="eng">Yes - I have entered my name correctly</span>
                        <span data-lang="arabic" dir="rtl" class="rtl-both">نعم – لقد أدخلت أسمي بشكل صحيح	 </span>
                    </label>
                </div>
                <div class="radio-wrapper">
-                       <input id="nameCheckNo" name="nameCheck" data-button-page="name.html" data-button-id="#continuebutton" value="No" type="radio">
+                       <input id="nameCheckNo" name="nameCheck" data-button-page="name-multiple.html" data-button-id="#continuebutton" value="No" type="radio">
                        <label class="block-label" for="nameCheckNo">
 												 <span data-lang="eng">No - I want to enter my name again</span>
                        <span data-lang="arabic" dir="rtl" class="rtl-both">لا – أريد أن أدخل اسمي مرة أخرى	 </span>
@@ -106,7 +118,15 @@
 	 <div id="button-box" class="form-group nameCheckButton">
 	 <a class="button" id="continuebutton" href=""><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" class="rtl-both">استمر</span></a>
 	 </div>
+
+	 <div class="split-width clearfix">
+	 	<span class="fullwidthLinks" data-lang="eng"><a href="save-and-complete.html">Save and complete later</a></span>
+	 	<span class="fullwidthLinks" data-lang="arabic" dir="rtl"><a href="save-and-complete.html">العودة إلى التطبيق الخاص بك</a></span>
+	 </div>
+	 
 </div>
+
+
 
 <script type="text/javascript">
 $('#continuebutton').on('click', function(e) {

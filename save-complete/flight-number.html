@@ -1,0 +1,83 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>GOV.UK</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+	<!--[if gt IE 8]><!--><link href="/govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<!--[if IE 6]><link href="/govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="/govuk-assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="/govuk-assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<link href="/govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+	<link href="/govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/scripts/form.storage.js"></script>
+	<script type="text/javascript" src="/scripts/application.js"></script>
+	<script type="text/javascript" src="/scripts/details.polyfill.js"></script>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
+</head>
+<body>
+
+	<header data-includefile="header"></header>
+	<main id="content" role="main">
+		<div data-includefile="banner-alpha"></div>
+
+<!-- DELETE FROM HERE -->
+<div class="form-group">
+	<h1 class="form-title heading-large" data-lang="eng">What is your flight number?</h1>
+	<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">رحلتك للمملكة المتحدة</h1>
+
+	<fieldset>
+<div class="split-width clearfix">
+			<label for="flightNumberCheck" data-lang="eng" class="form-label">For example EK009, QR003 or KU101</label>
+			<label for="flightNumberCheck" data-lang="arabic" dir="rtl" class="form-label">ما رقم رحلتك؟ مثال: EK009 او QR003 او KU101</label>
+</div>
+<div class="split-width clearfix">
+			<p class="panel-indent flightnumber freetext" data-lang="eng">If you have any stops or connecting flights you must enter the number for the final part of your journey to the UK</p>
+			<p class="panel-indent flightnumber freetext" data-lang="arabic" dir="rtl">اذا احتوت رحلتك على توقفات او رحلات واصلة، يجب ان تدخل رقم الرحلة في الجزء النهائي من رحلتك للمملكة المتحدة</p>
+</div>
+			<input type="text" class="form-control tench" id="flightNumberCheck" name="flightNumberCheck" value="" data-storage="flightnumber" maxlength="9" autocomplete="off" />
+
+			<details id="flightNumberCheckCompletionAdvice" class="space-top">
+					<summary>
+							<span data-lang="eng">What is my flight number?</span> <span data-lang="arabic" dir="rtl" >ما رقم رحلتي؟</span>
+					</summary>
+					<div class="split-width clearfix">
+					<div class="panel-indent">
+							<p data-lang="eng">A flight number has 2 or 3 letters or numbers representing the airline followed by 1 to 4 numbers and sometimes an extra letter at the end, for example EK009, QR003 or KU101. It is not the same as the booking confirmation from your travel agent or airline.</p>
+							<p data-lang="eng">If you are taking more than 1 flight to reach the UK we only need to know the number for the flight that lands in the UK.</p>
+							<p data-lang="eng">Contact your travel agent or airline if you can’t find your flight number - your electronic visa waiver will be delayed if you enter it incorrectly.</p>
+					</div>
+
+					<div class="panel-indent" dir="rtl">
+							<p data-lang="arabic">يحتوي رقم الرحلة على حرفين أو ثلاثة أو أرقام تمثل الخطوط الجوية، ويتبعه رقم مكون من خانة إلى أربعة خانات رقمية وأحيانا قد يحتوي على حرف إضافي في نهايته. مثال: EK009 او QR003 او KU101. وهذا ليس رقم تأكيد الحجز من وكيل السفر او الخطوط الجوية.</p>
+							<p data-lang="arabic">اذا كنت ستأخذ أكثر من رحلة لتصل المملكة المتحدة، فلا نحتاج فقط إلا لرقم الرحلة التي ستهبط بالمملكة المتحدة.</p>
+							<p data-lang="arabic">اتصل مع وكيل السفر او الخطوط الجوية اذا لم تستطيع ان تجد رقم الرحلة - سيتم تأخير الإعفاء الإلكتروني من التأشيرة الخاص بك اذا أدخلت هذا الرقم بشكل غير صحيح.</p>
+					</div>
+				</div>
+			</details>
+	</fieldset>
+	</div>
+
+
+	<div class="form-group">
+		<a class="button" href="date-arrival.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
+	</div>
+	<div class="split-width clearfix">
+		<span class="fullwidthLinks" data-lang="eng"><a href="save-and-complete.html">Save and complete later</a></span>
+		<span class="fullwidthLinks" data-lang="arabic" dir="rtl"><a href="save-and-complete.html">العودة إلى التطبيق الخاص بك</a></span>
+	</div>
+
+<!-- STOP DELETING! -->
+
+
+	</main>
+	<footer data-includefile="footer"></footer>
+</body>
+</html>

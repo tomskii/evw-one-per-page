@@ -34,48 +34,68 @@
 
 <div class"hideError" style="display:none">
 	<div class="error-summary clearfix" tabindex="-1">
-	  <h1 class="heading-medium error-summary-heading" data-lang="eng">Check your answer</h1>
+	  <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">Check your answer</h1>
 		<h1 class="heading-medium error-summary-heading" data-lang="arabic" dir="rtl">تحقق من إجابتك</h1>
 	  <ul class="error-summary-list">
-	    <li><a href="#recheckYourName" data-lang="eng">Select whether this is your correct passport number</a></li>
+	    <li><a href="#recheckYourName">Select whether you have entered your name correctly</a></li>
 	  </ul>
 		<ul class="error-summary-list" data-lang="arabic" dir="rtl">
-	    <li><a href="#recheckYourName">تحديد ما إذا كان هذا هو رقم جواز السفر الصحيح الخاص بك</a></li>
+	    <li><a href="#recheckYourName">تحديد ما إذا كنت قد أدخلت اسمك بشكل صحيح</a></li>
 	  </ul>
+
+
 	</div>
 </div>
 
 <div class="form-group">
-<h1 class="form-title heading-large" data-lang="eng">Is this your passport number?</h1>
-<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">هذا رقم جواز السفر الخاص بك؟</h1>
+<h1 class="form-title heading-large" data-lang="eng">Check your name against your passport</h1>
+<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">قارن اسمك مع جواز سفرك</h1>
 
 <div class="form-group less-bottom2">
-<div class="playback-container" name="omani-name">
+<div class="playback-container" name="singlename">
 <div class="split-width clearfix">
 			 <div class="flight-details-container omani-container" id="recheckYourName">
-           <div class="flight-details-row passportplayback">
-               <div class="playback-cell omaniNamePlay">098345765</div>
+           <div class="flight-details-row">
+               <div class="playback-cell omaniNamePlay" data-playback="singlename"></div>
            </div>
        </div>
 		 </div>
+
+		 <div class="split-width clearfix">
+		 <div class="check-your-name-list">
+		     <h3>Check you have included:</h3>
+		     <ul class="list list-bullet">
+		         <li>all names and initials</li>
+		         <li>any punctuation, for example dashes or apostrophes</li>
+		     </ul>
+		 </div>
+		 <div class="check-your-name-list" dir="rtl">
+		     <h3>تأكد انك شملت:</h3>
+		     <ul class="list list-bullet">
+		         <li>كل أسماؤك</>
+		         <li>أي علامات ترقيم مثل الشرطات او الفاصلة علامات الترقيم والتشكيل مثل الشرطات والفواصل</li>
+		     </ul>
+		 </div>
+		 </div>
+
 	 </div>
        <div class="nameError clearfix">
-				 <span class="error-message" style="display:none">Select whether this is your correct passport number</span>
-				 <span class="error-message" style="display:none" dir="rtl" class="rtl-both">تحديد ما إذا كان هذا هو رقم جواز السفر الصحيح الخاص بك</span>
+				 <span class="error-message" style="display:none">Select whether you have entered your name correctly</span>
+				 <span class="error-message" style="display:none" dir="rtl" class="rtl-both">تحديد ما إذا كنت قد أدخلت اسمك بشكل صحيح</span>
 				 <div class="form-group nameChecking" data-group-name="nameCheck">
            <fieldset>
                <div class="radio-wrapper">
-                   <input id="nameCheckYes" name="nameCheck" data-button-page="check-dateofbirth.html" data-button-id="#continuebutton" value="Yes" type="radio">
+                   <input id="nameCheckYes" name="nameCheck" data-button-page="passport-number.html" data-button-id="#continuebutton" value="Yes" type="radio">
                        <label class="block-label" for="nameCheckYes">
-												 <span data-lang="eng">Yes - this is my passport number</span>
-                       <span data-lang="arabic" dir="rtl" class="rtl-both">نعم، هذا هو رقم جواز سفري</span>
+												 <span data-lang="eng">Yes - I have entered my name correctly</span>
+                       <span data-lang="arabic" dir="rtl" class="rtl-both">نعم – لقد أدخلت أسمي بشكل صحيح	 </span>
                    </label>
                </div>
                <div class="radio-wrapper">
-                       <input id="nameCheckNo" name="nameCheck" data-button-page="passport-number.html" data-button-id="#continuebutton" value="No" type="radio">
+                       <input id="nameCheckNo" name="nameCheck" data-button-page="name.html" data-button-id="#continuebutton" value="No" type="radio">
                        <label class="block-label" for="nameCheckNo">
-												 <span data-lang="eng">No - I want to enter my passport number</span>
-                       <span data-lang="arabic" dir="rtl" class="rtl-both">لا أريد أن أدخل رقم جواز سفري</span>
+												 <span data-lang="eng">No - I want to enter my name again</span>
+                       <span data-lang="arabic" dir="rtl" class="rtl-both">لا – أريد أن أدخل اسمي مرة أخرى	 </span>
                    </label>
                </div>
            </fieldset>
@@ -85,6 +105,10 @@
 
 	 <div id="button-box" class="form-group nameCheckButton">
 	 <a class="button" id="continuebutton" href=""><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" class="rtl-both">استمر</span></a>
+	 </div>
+	 <div class="split-width clearfix">
+	 	<span class="fullwidthLinks" data-lang="eng"><a href="save-and-complete.html">Save and complete later</a></span>
+	 	<span class="fullwidthLinks" data-lang="arabic" dir="rtl"><a href="save-and-complete.html">العودة إلى التطبيق الخاص بك</a></span>
 	 </div>
 </div>
 

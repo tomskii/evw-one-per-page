@@ -28,21 +28,34 @@
 		<div data-includefile="banner-alpha"></div>
 
 <!-- DELETE FROM HERE -->
-		<h1 class="form-title heading-large" data-lang="eng">Check your passport image</h1>
-		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">تفقد نسخة صفحة المعلومات من جواز السفر</h1>
+		<h1 class="form-title heading-large" data-lang="eng">Upload a copy of your passport</h1>
+		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">تحميل نسخة عن صفحة المعلومات الشخصية في جواز سفرك</h1>
 
-		<section data-section-title="Check your passport image" data-section-name="check-passport-image" google-page-name="check-passport-image">
-				<!--<h1 class="heading-large">Check your passport image</h1>
-				<h1 class="heading-large" dir="rtl">تفقد نسخة صفحة المعلومات من جواز السفر</h1>-->
-				<div class="form-group">
-						<img src="/images/test-passport.jpg" width="100%" hspace="1" id="passportImagePreview" />
+		<section data-section-title="Upload your passport image" data-section-name="upload-passport-image" google-page-name="upload-passport-image">
+				<!--<h1 class="heading-large">Upload a copy of your passport</h1>
+				<h1 class="heading-large" dir="rtl">تحميل نسخة عن صفحة المعلومات الشخصية في جواز سفرك</h1>-->
+				<div class="uploadbox form-group">
+						<div class="passport-upload-guidance">
+
+								<div class="passport-upload-guidance-text">
+										<h3>Example image</h3>
+										<p>The image must be of the page showing your photo, name and other personal information.</p>
+								</div>
+
+								<div class="passport-upload-guidance-text" dir="rtl">
+										<h3>مثال عن صورة</h3>
+										<p>يجب ان تكون الصورة عن الصفحة التي تحتوي على صورتك واسمك ومعلومات شخصية أخرى.</p>
+								</div>
+								<img src="/images/sample-passport-omn.jpg" class="passport-upload-guidance-image">
+						</div>
 						<div class="passport-upload-requirements">
 								<div>
-										<h3>Check that:</h3>
+										<h3>Image requirements</h3>
 										<ul>
-												<li>the whole page is visible</li>
-												<li>you can clearly read all the information</li>
-												<li>there are not any flashes, shadows or creases</li>
+												<li>whole page and no other objects</li>
+												<li>clear and in focus</li>
+												<li>no flash, shadows, creases or tears</li>
+												<li>JPG, JPEG or PNG format only</li>
 										</ul>
 								</div>
 								<div class="passport-upload-requirements-right" dir="rtl">
@@ -51,36 +64,21 @@
 												<li>كامل الصفحة بدون أي شيء آخر</li>
 												<li>واضحة ونظيفة</li>
 												<li>بدون مومض او ثنيات او تمزقات</li>
+												<li>نمط JPG او JPEG أو PNG فقط.</li>
 										</ul>
 								</div>
+								<br/>
 						</div>
-
-								<fieldset id="check-passport-image">
-										<legend class="visually-hidden">
-												<span data-lang="eng">Check your passport image</span>
-												<span data-lang="arabic">تفقد نسخة صفحة المعلومات من جواز السفر</span>
-										</legend>
-										<div class="radio-wrapper">
-												<input id="reUploadImageNo" name="reUploadImage" value="No" type="radio" data-button-page="check-passport-number.html" data-button-id="#continuebutton" />
-												<label class="block-label" for="reUploadImageNo">
-														<span lang="en">Yes - my image is clear</span> &nbsp;&nbsp;<span lang="ar">نعم، صورتي واضحة</span>
-												</label>
-										</div>
-										<div class="radio-wrapper">
-												<input id="reUploadImageYes" name="reUploadImage" value="Yes" type="radio" data-button-page="passport-upload.html" data-button-id="#continuebutton" />
-												<label class="block-label" for="reUploadImageYes">
-														<span lang="en">No - I want to change my image</span> &nbsp;&nbsp;<span lang="ar">لا، أريد أن أغير الصورة</span>
-												</label>
-										</div>
-								</fieldset>
-						</div>
-
+				</div>
 		</section>
 
 	<div class="form-group">
-		<a class="button" id="continuebutton" href="check-passport-number.html"><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" >استمر</span></a>
+		<a class="button" id="continuebutton" href="loading.html"><span data-lang="eng">Upload picture</span><span data-lang="arabic" dir="rtl" >تحميل نسخة</span></a>
 	</div>
-
+	<div class="split-width clearfix">
+		<span class="fullwidthLinks" data-lang="eng"><a href="save-and-complete.html">Save and complete later</a></span>
+		<span class="fullwidthLinks" data-lang="arabic" dir="rtl"><a href="save-and-complete.html">العودة إلى التطبيق الخاص بك</a></span>
+	</div>
 <!-- STOP DELETING! -->
 
 	</main>
