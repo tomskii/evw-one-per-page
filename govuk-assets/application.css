@@ -2040,6 +2040,9 @@ ul, ol {
 .header-notice-complete h1 {
       font-weight: 700;
   }
+  .header-notice-complete h1[dir="rtl"] {
+        margin-bottom: 20px
+    }
 
 @media (min-width: 641px){
 #content .header-notice-complete p {
