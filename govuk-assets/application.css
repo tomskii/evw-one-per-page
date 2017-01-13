@@ -2188,7 +2188,7 @@ hr.hrdivstyle {border: 0; height: 1px; background: #bfc1c3;}
 
 .form-group.nameCheckButton {margin-top: 30px}
 .form-group.nameChecking {margin-bottom: 0}
-.arabic-half p {line-height: 1.1em; margin-bottom: .7em}
+.arabic-half p {line-height: 1.2em; margin-bottom: 1em}
 
 summary span {text-decoration: underline;}
 summary span[dir="rtl"] {float: right}
