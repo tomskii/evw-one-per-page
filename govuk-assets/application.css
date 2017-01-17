@@ -1254,7 +1254,7 @@ p.icon-important  {
     padding-bottom: 6px;
     margin-top: 1.125em;
     margin-bottom: 1.125em;
-
+    font-weight: bold
 }
 @media (min-width: 641px) {
 p.icon-important  {
@@ -2166,7 +2166,9 @@ p.form-hint[dir="rtl"] {font-size: 22px}
 .flight-details-row div.playback-cell {
     width: 60%;
 }
-
+.flight-details-row div.playback-cell.fullwidthcell {
+    width: 100%;
+}
 .flight-details-row.passportplayback div.playback-cell {
     width: 100%;
 }
