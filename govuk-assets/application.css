@@ -2156,7 +2156,7 @@ p.form-hint[dir="rtl"] {font-size: 22px}
     margin-top: 1.2em;
 }}
 @media (min-width: 641px){
-.form-control.omani-field {width: 75%}
+.form-control.omani-field {width: 100%}
 }
 .split-width.omani {margin-top: 30px}
 
