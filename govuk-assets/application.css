@@ -2211,3 +2211,4 @@ summary span[dir="rtl"] {float: right}
 @media (max-width: 440px){
 .fullwidthLinks, .fullwidthText {width: 100%; clear: both}
 }
+.englishsmaller {font-size: 19px}
