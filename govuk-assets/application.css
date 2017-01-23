@@ -2212,3 +2212,16 @@ summary span[dir="rtl"] {float: right}
 .fullwidthLinks, .fullwidthText {width: 100%; clear: both}
 }
 .englishsmaller {font-size: 19px}
+
+@media (max-width: 640px) {
+  .button {
+    display: block;
+    margin: 0 0 15px 0;
+    padding: 15px;
+  }
+  }
+  @media (max-width: 640px) {
+    .button span[dir="rtl"] {
+      float: right;
+    }
+    }
