@@ -649,7 +649,9 @@ width: 100%;  }
 #OmaniName .form-hint[dir="rtl"] {
     width: 48%; float: right
 }
-
+@media (max-width: 640px) {
+#OmaniName .form-hint, #OmaniName .form-hint[dir="rtl"] {width: 100%}
+  }
 .form-control {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
@@ -2219,9 +2221,12 @@ summary span[dir="rtl"] {float: right}
     margin: 0 0 15px 0;
     padding: 15px;
   }
+  button.button {
+    width: 100%;
   }
-  @media (max-width: 640px) {
-    .button span[dir="rtl"] {
-      float: right;
-    }
-    }
+  button.button span {
+    float: left;
+  }
+  .button span[dir="rtl"] {
+    float: right;
+  }}
