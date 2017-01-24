@@ -1293,6 +1293,16 @@ p.icon-important[dir="rtl"] {
     padding-right: 42px;
 }
 
+p.redcross {
+  background: url("/images/redcross.png") no-repeat;
+  padding-top: 6px;
+  padding-left: 42px;
+  padding-bottom: 6px;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: normal;
+}
+
 p.icon-1 {
     background-repeat: no-repeat;
     background-position: 0 4px;
@@ -2129,6 +2139,15 @@ p.form-hint[dir="rtl"] {font-size: 22px}
 #passportImagePreview {width: 66%}}
 @media (max-width: 640px){
 #passportImagePreview {width: 100%}}
+
+@media (min-width: 641px){
+#passportImagePreviewFail {width: 50%}}
+@media (max-width: 840px){
+#passportImagePreviewFail {width: 66%}}
+@media (max-width: 640px){
+#passportImagePreviewFail {width: 100%}}
+
+
 
 .flight-details-row div[dir="rtl"] {
     font-size: 120%
