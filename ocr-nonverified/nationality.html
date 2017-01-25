@@ -28,48 +28,54 @@
 		<div data-includefile="banner-alpha"></div>
 
 <!-- DELETE FROM HERE -->
-		<h1 class="form-title heading-large" data-lang="eng">You need another passport image</h1>
-		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">لم نتمكن من التحقق من الصورة</h1>
-		<div class="form-group">
-			<div class="split-width clearfix">
-			<p class="icon-important redcross" data-lang="eng">This image has failed our automated check. You need to upload another one.</p>
-			<p class="icon-important redcross" data-lang="arabic" dir="rtl">لقد فشلت هذه الصورة لدينا الاختيار الآلي. تحتاج إلى تحميل واحد آخر.</p>
+		<h1 class="form-title heading-large" data-lang="eng">What is your nationality?</h1>
+		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">ما جنسيتك؟</h1>
+
+		<div class="form-group none">
+
+
+
+    <div class="radio-wrapper">
+      <input id="arrive-1" class="radiostyled" name="CountryOfIssue" value="By plane" type="radio">
+      <label class="block-label" for="arrive-1">
+				<span data-lang="eng">Kuwaiti</span>
+	      <span data-lang="arabic" dir="rtl" class="rtl-both">كويتي</span>
+    	</label>
 		</div>
-
-		<section data-section-title="Check your passport image" data-section-name="check-passport-image" google-page-name="check-passport-image">
-				<!--<h1 class="heading-large">Check your passport image</h1>
-				<h1 class="heading-large" dir="rtl">تفقد نسخة صفحة المعلومات من جواز السفر</h1>-->
-				<div class="form-group">
-						<img src="/images/test-passport-blur.jpg" width="100%" hspace="1" id="passportImagePreviewFail" />
-						<div class="passport-upload-requirements">
-								<div>
-										<h3>Image requirements</h3>
-										<ul>
-												<li>whole page and no other objects</li>
-												<li>clear and in focus</li>
-												<li>no flash, shadows, creases or tears</li>
-												<li>JPG, JPEG or PNG format only</li>
-										</ul>
-								</div>
-								<div class="passport-upload-requirements-right" dir="rtl">
-										<h3>متطلبات الصورة</h3>
-										<ul>
-												<li>كامل الصفحة بدون أي شيء آخر</li>
-												<li>واضحة ونظيفة</li>
-												<li>بدون مومض او ثنيات او تمزقات</li>
-												<li>نمط JPG او JPEG أو PNG فقط.</li>
-										</ul>
-								</div>
-								<br/>
-						</div>
-						</div>
-
-		</section>
-
-		<div class="form-group">
-			<a class="button" id="continuebutton" href="loading2.html"><span data-lang="eng">Upload image</span><span data-lang="arabic" dir="rtl" >تحميل الصورة</span></a>
-		</div>
+		<div class="radio-wrapper">
+      <input id="arrive-2" name="CountryOfIssue" value="By train" type="radio">
+			<label class="block-label" for="arrive-2">
+	      <span data-lang="eng">Omani</span>
+	      <span data-lang="arabic" dir="rtl" class="rtl-both">عُماني</span>
+    </label>
+	</div>
+	<div class="radio-wrapper">
+      <input id="arrive-3" name="CountryOfIssue" value="By boat" type="radio">
+			<label class="block-label" for="arrive-3">
+	      <span data-lang="eng">Qatari</span>
+	      <span data-lang="arabic" dir="rtl" class="rtl-both">قطري</span>
+    </label>
+	</div>
+	<div class="radio-wrapper">
+      <input id="arrive-4" name="CountryOfIssue" value="By land from the Republic of Ireland" type="radio">
+			<label class="block-label" for="arrive-4">
+	      <span data-lang="eng">Emirati</span>
+	      <span data-lang="arabic" dir="rtl" class="rtl-both">إماراتي</span>
+    </label>
+	</div>
+	<div class="radio-wrapper">
+			<input id="arrive-5" name="CountryOfIssue" value="Private plane" type="radio">
+			<label class="block-label" for="arrive-5">
+				<span data-lang="eng">Other</span>
+				<span data-lang="arabic" dir="rtl" class="rtl-both">غيره</span>
+		</label>
 </div>
+  </div>
+	<div class="form-group">
+		<a class="button" id="continuebutton" href="passport-upload.html"><span data-lang="eng">Continue</span>&nbsp;&nbsp;<span data-lang="arabic" dir="rtl" >استمر</span></a>
+	</div>
+
+
 <!-- STOP DELETING! -->
 
 	</main>

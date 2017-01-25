@@ -21,6 +21,9 @@
 	<script type="text/javascript" src="/scripts/application.js"></script>
 	<script type="text/javascript" src="/scripts/details.polyfill.js"></script>
 	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
+	<script>
+	window.setTimeout(function(){ window.location = "checking.html"; },2000);
+	</script>
 </head>
 	<body class="js-enabled">
 	<header data-includefile="header"></header>
@@ -28,48 +31,18 @@
 		<div data-includefile="banner-alpha"></div>
 
 <!-- DELETE FROM HERE -->
-		<h1 class="form-title heading-large" data-lang="eng">You need another passport image</h1>
-		<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">لم نتمكن من التحقق من الصورة</h1>
-		<div class="form-group">
-			<div class="split-width clearfix">
-			<p class="icon-important redcross" data-lang="eng">This image has failed our automated check. You need to upload another one.</p>
-			<p class="icon-important redcross" data-lang="arabic" dir="rtl">لقد فشلت هذه الصورة لدينا الاختيار الآلي. تحتاج إلى تحميل واحد آخر.</p>
-		</div>
 
-		<section data-section-title="Check your passport image" data-section-name="check-passport-image" google-page-name="check-passport-image">
-				<!--<h1 class="heading-large">Check your passport image</h1>
-				<h1 class="heading-large" dir="rtl">تفقد نسخة صفحة المعلومات من جواز السفر</h1>-->
-				<div class="form-group">
-						<img src="/images/test-passport-blur.jpg" width="100%" hspace="1" id="passportImagePreviewFail" />
-						<div class="passport-upload-requirements">
-								<div>
-										<h3>Image requirements</h3>
-										<ul>
-												<li>whole page and no other objects</li>
-												<li>clear and in focus</li>
-												<li>no flash, shadows, creases or tears</li>
-												<li>JPG, JPEG or PNG format only</li>
-										</ul>
-								</div>
-								<div class="passport-upload-requirements-right" dir="rtl">
-										<h3>متطلبات الصورة</h3>
-										<ul>
-												<li>كامل الصفحة بدون أي شيء آخر</li>
-												<li>واضحة ونظيفة</li>
-												<li>بدون مومض او ثنيات او تمزقات</li>
-												<li>نمط JPG او JPEG أو PNG فقط.</li>
-										</ul>
-								</div>
-								<br/>
-						</div>
-						</div>
+<div class="loadingWrapper">
+<img src="/images/loading200w.gif">
+<p><span data-lang="eng">Loading image</span> &nbsp;<span data-lang="arabic" dir="rtl" class="arabicBigger">تحميل الصورة</span></p>
 
-		</section>
-
-		<div class="form-group">
-			<a class="button" id="continuebutton" href="loading2.html"><span data-lang="eng">Upload image</span><span data-lang="arabic" dir="rtl" >تحميل الصورة</span></a>
-		</div>
 </div>
+
+
+
+
+
+
 <!-- STOP DELETING! -->
 
 	</main>

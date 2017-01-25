@@ -1,0 +1,110 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>GOV.UK</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Copyright" content="Open Government Licence v3.0, except where otherwise stated" />
+	<!--[if gt IE 8]><!--><link href="/govuk-assets/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<!--[if IE 6]><link href="/govuk-assets/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 7]><link href="/govuk-assets/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<!--[if IE 8]><link href="/govuk-assets/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<link href="/govuk-assets/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+	<link href="/govuk-assets/application.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="/govuk-assets/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/scripts/form.storage.js"></script>
+	<script type="text/javascript" src="/scripts/application.js"></script>
+	<script type="text/javascript" src="/scripts/details.polyfill.js"></script>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
+	<script>
+
+	</script>
+</head>
+	<body class="js-enabled">
+	<header data-includefile="header"></header>
+	<main id="content" role="main">
+		<div data-includefile="banner-alpha"></div>
+
+<!-- DELETE FROM HERE -->
+
+<div class"hideError" style="display:none">
+	<div class="error-summary clearfix" tabindex="-1">
+	  <h1 class="heading-medium error-summary-heading" data-lang="eng">Check your answer</h1>
+		<h1 class="heading-medium error-summary-heading" data-lang="arabic" dir="rtl">تحقق من إجابتك</h1>
+	  <ul class="error-summary-list">
+	    <li><a href="#recheckYourName" data-lang="eng">Select whether this is your correct date of birth</a></li>
+	  </ul>
+		<ul class="error-summary-list" data-lang="arabic" dir="rtl">
+	    <li><a href="#recheckYourName">حدد إذا كان هذا تاريخ ميلادك الصحيح</a></li>
+	  </ul>
+	</div>
+</div>
+
+<div class="form-group">
+<h1 class="form-title heading-large" data-lang="eng">Is this your date of birth?</h1>
+<h1 class="form-title heading-large" data-lang="arabic" dir="rtl">هل هذا تاريخ ميلادك؟</h1>
+
+<div class="form-group less-bottom2">
+<div class="playback-container" name="omani-name">
+<div class="split-width clearfix">
+			 <div class="flight-details-container omani-container" id="recheckYourName">
+           <div class="flight-details-row passportplayback">
+               <div class="playback-cell omaniNamePlay">22/04/1965</div>
+           </div>
+       </div>
+		 </div>
+	 </div>
+       <div class="nameError clearfix">
+				 <span class="error-message" style="display:none">Select whether this is your correct date of birth</span>
+				 <span class="error-message" style="display:none" dir="rtl" class="rtl-both">حدد إذا كان هذا تاريخ ميلادك الصحيح</span>
+				 <div class="form-group nameChecking" data-group-name="nameCheck">
+           <fieldset>
+               <div class="radio-wrapper">
+                   <input id="nameCheckYes" name="nameCheck" data-button-page="name-multiple.html" data-button-id="#continuebutton" value="Yes" type="radio">
+                       <label class="block-label" for="nameCheckYes">
+												 <span data-lang="eng">Yes - this is my date of birth</span>
+                       <span data-lang="arabic" dir="rtl" class="rtl-both">نعم – هذا تاريخ ميلادي</span>
+                   </label>
+               </div>
+               <div class="radio-wrapper">
+                       <input id="nameCheckNo" name="nameCheck" data-button-page="date-of-birth.html" data-button-id="#continuebutton" value="No" type="radio">
+                       <label class="block-label" for="nameCheckNo">
+												 <span data-lang="eng">No - I want to enter my date of birth</span>
+                       <span data-lang="arabic" dir="rtl" class="rtl-both">كلا – أريد أن أدخل تاريخ ميلادي</span>
+                   </label>
+               </div>
+           </fieldset>
+       </div>
+		 </div>
+   </div>
+
+	 <div id="button-box" class="form-group nameCheckButton">
+	 <a class="button" id="continuebutton" href=""><span data-lang="eng">Continue</span><span data-lang="arabic" dir="rtl" class="rtl-both">استمر</span></a>
+	 </div>
+</div>
+
+<script type="text/javascript">
+$('#continuebutton').on('click', function(e) {
+    var yesChecked = $("#nameCheckYes").prop("checked");
+    var noChecked = $("#nameCheckNo").prop("checked");
+    if (!yesChecked && !noChecked) {
+        e.preventDefault();
+        $('.error-summary').parent().show();
+				$('.error-message').show();
+        $('.nameError').addClass('visible');
+    }
+});
+</script>
+
+
+<!-- STOP DELETING! -->
+
+	</main>
+	<footer data-includefile="footer"></footer>
+</body>
+</html>
