@@ -2237,7 +2237,7 @@ summary span[dir="rtl"] {float: right}
 @media (max-width: 640px) {
   .button {
     display: block;
-    margin: 0 0 15px 0;
+    margin: 10px 0 15px 0;
     padding: 15px;
   }
   button.button {
